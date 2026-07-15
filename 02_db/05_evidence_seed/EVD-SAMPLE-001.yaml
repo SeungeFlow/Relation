@@ -20,5 +20,11 @@
     "01_system/05_pipeline/RELATION_CYCLE.yaml",
     "00_manifest/CURRENT_STATUS.yaml"
   ],
-  "schema_status": "PROVISIONAL_UNTIL_SYSTEM_DB_CONTRACT_STEP"
+  "schema_status": "BOUND_TO_FOUNDATION_SCHEMA",
+  "contract_refs": [
+    "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+    "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+    "03_system_db_contract/02_provenance/SAMPLE_CYCLE_PROVENANCE.yaml",
+    "03_system_db_contract/03_version_binding/SAMPLE_VERSION_BINDING.yaml"
+  ]
 }

@@ -1,0 +1,24 @@
+{
+  "provenance_schema": {
+    "required": [
+      "provenance_id",
+      "result_seed_id",
+      "source_seed_ids",
+      "input_seed_ids",
+      "function_id",
+      "function_version",
+      "repository",
+      "branch",
+      "source_state_commit",
+      "analysis_time",
+      "actor_reference",
+      "verification_status"
+    ],
+    "rules": [
+      "result_must_trace_to_source",
+      "function_id_must_exist_in_registry",
+      "input_seed_ids_must_exist_in_db_index",
+      "actor_reference_must_not_replace_for_instance_canonical_record"
+    ]
+  }
+}

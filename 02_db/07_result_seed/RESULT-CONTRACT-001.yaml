@@ -1,0 +1,42 @@
+{
+  "id": "RESULT-CONTRACT-001",
+  "type": "result_seed",
+  "status": "LOCAL_CLOSED",
+  "source_refs": [
+    "RESULT-SAMPLE-001",
+    "PROV-SAMPLE-CYCLE-001"
+  ],
+  "created_by_function": "FN-RENDER-RESULT-001",
+  "function_version": "0.1-foundation",
+  "prior_seed": "QUESTION-SAMPLE-002",
+  "next_seed": "QUESTION-SAMPLE-003",
+  "uncertainty": "low",
+  "local_answer": "Relation System–DB Contract Foundation은 Function Input·Output, Provenance, Version Binding, Mutation, Integrity 및 for_instance Interface를 통해 System Method와 DB Seed 사이의 재현 가능한 연결을 형성한다.",
+  "evidence_refs": [
+    "03_system_db_contract/05_integrity/CONTRACT_INTEGRITY_CHECK.yaml"
+  ],
+  "comparison_refs": [
+    "CMP-SAMPLE-001"
+  ],
+  "limitations": [
+    "실제 for_instance Runtime Assignment는 아직 결속되지 않았다.",
+    "외부 Domain Function 실행은 아직 수행되지 않았다.",
+    "Book Package 본문은 아직 설치되지 않았다."
+  ],
+  "unresolved_relations": [
+    "actual_for_instance_assignment_binding",
+    "book_package_installation",
+    "external_domain_pilot"
+  ],
+  "next_question_refs": [
+    "QUESTION-SAMPLE-003"
+  ],
+  "provenance_ref": "PROV-SAMPLE-CYCLE-001",
+  "version_binding_ref": "BIND-SAMPLE-001",
+  "contract_refs": [
+    "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+    "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+    "03_system_db_contract/02_provenance/SAMPLE_CYCLE_PROVENANCE.yaml",
+    "03_system_db_contract/03_version_binding/SAMPLE_VERSION_BINDING.yaml"
+  ]
+}

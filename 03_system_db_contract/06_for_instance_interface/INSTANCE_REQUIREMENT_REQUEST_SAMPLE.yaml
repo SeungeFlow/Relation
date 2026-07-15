@@ -1,0 +1,29 @@
+{
+  "instance_requirement_request": {
+    "request_id": "REL-FI-REQ-SAMPLE-001",
+    "task_id": "REL-CONTRACT-FOUNDATION",
+    "function_ids": [
+      "FN-REGISTER-QUESTION-001",
+      "FN-SELECT-CENTER-001",
+      "FN-REVERSE-ANALYZE-001",
+      "FN-GRADE-EVIDENCE-001",
+      "FN-BUILD-COMPARISON-001",
+      "FN-RENDER-RESULT-001",
+      "FN-NEXT-QUESTION-001"
+    ],
+    "required_capabilities": [
+      "package_and_source_reading",
+      "relation_interpretation",
+      "structural_verification",
+      "result_provenance_tracking"
+    ],
+    "independent_verification_required": true,
+    "mutation_authority_requirement": "NONE_FOR_ANALYSIS_SAMPLE",
+    "seat_requirements": {
+      "canonical_source": "SeungeFlow/for_instance",
+      "defined_in_relation": false,
+      "requested_profile": "UNRESOLVED_BY_RELATION"
+    },
+    "status": "REQUEST_TEMPLATE_ONLY"
+  }
+}

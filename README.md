@@ -8,7 +8,7 @@
 - Relation System Foundation: complete
 - Relation DB Foundation: complete
 - Complete Local Cycle Sample: complete
-- System–DB Contract: foundation only
+- System–DB Contract Foundation: complete
 - Book Package: source confirmed only
 - Initial Structure Closure: not complete
 ## Repository Areas

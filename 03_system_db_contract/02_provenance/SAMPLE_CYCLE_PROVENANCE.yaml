@@ -1,0 +1,30 @@
+{
+  "sample_cycle_provenance": {
+    "provenance_id": "PROV-SAMPLE-CYCLE-001",
+    "result_seed_id": "RESULT-SAMPLE-001",
+    "source_seed_ids": [
+      "SRC-SAMPLE-001"
+    ],
+    "input_seed_ids": [
+      "QUESTION-SAMPLE-001",
+      "SRC-SAMPLE-001",
+      "DATA-SAMPLE-001",
+      "CENTER-SAMPLE-001",
+      "REL-SAMPLE-001",
+      "EVD-SAMPLE-001",
+      "CMP-SAMPLE-001"
+    ],
+    "function_id": "FN-RENDER-RESULT-001",
+    "function_version": "0.1-foundation",
+    "repository": "SeungeFlow/Relation",
+    "branch": "main",
+    "source_state_commit": "f4a6ad5dd54af7cbdfddaa41dc36a892276c9e07",
+    "analysis_time": "2026-07-15",
+    "actor_reference": {
+      "implementation_instance": "gpt.github",
+      "assignment_source": "for_instance",
+      "canonical_assignment_copied_here": false
+    },
+    "verification_status": "VERIFIED_LOCAL"
+  }
+}

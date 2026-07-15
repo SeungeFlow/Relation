@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence Seed",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "status",
+    "source_refs",
+    "created_by_function",
+    "function_version",
+    "prior_seed",
+    "next_seed",
+    "uncertainty",
+    "supported_claim",
+    "evidence_type"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "const": "evidence_seed"
+    },
+    "status": {
+      "type": "string"
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_by_function": {
+      "type": "string"
+    },
+    "function_version": {
+      "type": "string"
+    },
+    "prior_seed": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "next_seed": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "uncertainty": {
+      "type": [
+        "string",
+        "number",
+        "null"
+      ]
+    },
+    "contract_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "schema_status": {
+      "type": "string"
+    },
+    "supported_claim": {
+      "type": "string"
+    },
+    "evidence_type": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

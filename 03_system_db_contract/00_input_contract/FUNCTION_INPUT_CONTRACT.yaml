@@ -1,0 +1,120 @@
+{
+  "function_input_contract": {
+    "contract_version": "0.1-foundation",
+    "functions": {
+      "FN-REGISTER-QUESTION-001": {
+        "required_inputs": [
+          "user_question"
+        ],
+        "optional_inputs": [
+          "scope"
+        ],
+        "allowed_output_types": [
+          "question_seed"
+        ]
+      },
+      "FN-LOCK-SOURCE-001": {
+        "required_inputs": [
+          "question_seed"
+        ],
+        "optional_inputs": [
+          "source_candidate"
+        ],
+        "allowed_output_types": [
+          "source_seed",
+          "source_boundary"
+        ]
+      },
+      "FN-SELECT-CENTER-001": {
+        "required_inputs": [
+          "question_seed",
+          "source_seed"
+        ],
+        "optional_inputs": [],
+        "allowed_output_types": [
+          "center_cell"
+        ]
+      },
+      "FN-REVERSE-ANALYZE-001": {
+        "required_inputs": [
+          "center_cell",
+          "source_seed"
+        ],
+        "optional_inputs": [
+          "data_seed"
+        ],
+        "allowed_output_types": [
+          "relation_seed",
+          "question_seed"
+        ]
+      },
+      "FN-BUILD-BRIDGE-001": {
+        "required_inputs": [
+          "source_node",
+          "target_node"
+        ],
+        "optional_inputs": [
+          "relation_seed"
+        ],
+        "allowed_output_types": [
+          "relation_seed"
+        ]
+      },
+      "FN-GRADE-EVIDENCE-001": {
+        "required_inputs": [
+          "relation_seed",
+          "source_seed"
+        ],
+        "optional_inputs": [],
+        "allowed_output_types": [
+          "evidence_seed"
+        ]
+      },
+      "FN-BUILD-COMPARISON-001": {
+        "required_inputs": [
+          "center_cell",
+          "relation_seed"
+        ],
+        "optional_inputs": [
+          "evidence_seed"
+        ],
+        "allowed_output_types": [
+          "comparison_seed"
+        ]
+      },
+      "FN-RENDER-RESULT-001": {
+        "required_inputs": [
+          "relation_seed",
+          "evidence_seed",
+          "comparison_seed"
+        ],
+        "optional_inputs": [],
+        "allowed_output_types": [
+          "result_seed"
+        ]
+      },
+      "FN-NEXT-QUESTION-001": {
+        "required_inputs": [
+          "result_seed"
+        ],
+        "optional_inputs": [],
+        "allowed_output_types": [
+          "question_seed"
+        ]
+      }
+    },
+    "registry_input_aliases": {
+      "relation_claim": "relation_seed"
+    },
+    "registry_output_aliases": {
+      "unresolved_question": "question_seed",
+      "relation_bridge": "relation_seed"
+    },
+    "guards": [
+      "input_seed_must_exist_in_db_index",
+      "required_input_status_must_be_readable",
+      "source_precedes_interpretation",
+      "completed_design_validation_must_not_be_reopened"
+    ]
+  }
+}

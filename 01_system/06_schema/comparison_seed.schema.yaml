@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Comparison Seed",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "status",
+    "source_refs",
+    "created_by_function",
+    "function_version",
+    "prior_seed",
+    "next_seed",
+    "uncertainty",
+    "comparison_type",
+    "common_conditions",
+    "different_conditions",
+    "comparison_result"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "const": "comparison_seed"
+    },
+    "status": {
+      "type": "string"
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_by_function": {
+      "type": "string"
+    },
+    "function_version": {
+      "type": "string"
+    },
+    "prior_seed": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "next_seed": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "uncertainty": {
+      "type": [
+        "string",
+        "number",
+        "null"
+      ]
+    },
+    "contract_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "schema_status": {
+      "type": "string"
+    },
+    "comparison_type": {
+      "type": "string"
+    },
+    "common_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "different_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "comparison_result": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

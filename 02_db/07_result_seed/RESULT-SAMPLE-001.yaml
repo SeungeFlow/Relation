@@ -30,5 +30,13 @@
   ],
   "next_question_refs": [
     "QUESTION-SAMPLE-002"
-  ]
+  ],
+  "contract_refs": [
+    "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+    "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+    "03_system_db_contract/02_provenance/SAMPLE_CYCLE_PROVENANCE.yaml",
+    "03_system_db_contract/03_version_binding/SAMPLE_VERSION_BINDING.yaml"
+  ],
+  "provenance_ref": "PROV-SAMPLE-CYCLE-001",
+  "version_binding_ref": "BIND-SAMPLE-001"
 }
