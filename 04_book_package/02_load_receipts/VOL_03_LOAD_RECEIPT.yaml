@@ -1,0 +1,33 @@
+{
+  "volume_load_receipt": {
+    "package_id": "ARSFIP-10V-20260714",
+    "volume_id": "VOL_03",
+    "sequence": 3,
+    "source_filename": "03_Local.Zero_역검산_양방향_시간.md",
+    "source_sha256": "f960139cd7d12f88b3f27425d223e2efd799583ffc72c9278c7489f5e1050daa",
+    "source_bytes": 8564,
+    "full_read": true,
+    "definitions_loaded": true,
+    "guards_loaded": true,
+    "schemas_loaded": [],
+    "functions_loaded": [],
+    "imports": [
+      "VOL_01::global_guards",
+      "VOL_02::seed_fruit_cycle",
+      "VOL_02::concept_lineage_model"
+    ],
+    "imports_resolved": true,
+    "exports": [
+      "local_zero_model",
+      "reverse_analysis_method",
+      "bidirectional_time_model",
+      "knowledge_boundary",
+      "comparison_requirements"
+    ],
+    "exports_registered": true,
+    "repository_mutation_performed_during_load": false,
+    "volume_status": "VALIDATED",
+    "package_status": "LOADING_SEQUENCE_VALID",
+    "expected_next_volume": "VOL_04"
+  }
+}

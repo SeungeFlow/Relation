@@ -46,6 +46,14 @@
       "QUESTION-SAMPLE-003": {
         "type": "question_seed",
         "path": "02_db/08_question_seed/QUESTION-SAMPLE-003.yaml"
+      },
+      "RESULT-BOOK-001": {
+        "type": "result_seed",
+        "path": "02_db/07_result_seed/RESULT-BOOK-001.yaml"
+      },
+      "QUESTION-SAMPLE-004": {
+        "type": "question_seed",
+        "path": "02_db/08_question_seed/QUESTION-SAMPLE-004.yaml"
       }
     },
     "cycle": {
@@ -65,6 +73,12 @@
       "start": "QUESTION-SAMPLE-002",
       "local_result": "RESULT-CONTRACT-001",
       "next_question": "QUESTION-SAMPLE-003"
+    },
+    "book_package_stage": {
+      "lineage": "02_db/09_lineage/BOOK_PACKAGE_STAGE_LINEAGE.yaml",
+      "start": "QUESTION-SAMPLE-003",
+      "local_result": "RESULT-BOOK-001",
+      "next_question": "QUESTION-SAMPLE-004"
     }
   }
 }

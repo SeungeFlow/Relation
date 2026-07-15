@@ -1,0 +1,6 @@
+package_ref:
+  package_id: ARSFIP-10V-20260714
+  version: 0.1.0
+  total_volumes: 10
+  source_location: parent_distribution_bundle
+  status: candidate

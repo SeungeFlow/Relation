@@ -1,0 +1,152 @@
+{
+  "function_mapping": {
+    "package_id": "ARSFIP-10V-20260714",
+    "items": [
+      {
+        "function_id": "FN-BUILD-BRIDGE-001",
+        "package_registry_present": false,
+        "current_registry_present": true,
+        "current_method_paths": [],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": true
+      },
+      {
+        "function_id": "FN-BUILD-COMPARISON-001",
+        "package_registry_present": false,
+        "current_registry_present": true,
+        "current_method_paths": [],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": true
+      },
+      {
+        "function_id": "FN-COMPARE-001",
+        "package_registry_present": true,
+        "current_registry_present": false,
+        "current_method_paths": [],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": false
+      },
+      {
+        "function_id": "FN-EVIDENCE-001",
+        "package_registry_present": true,
+        "current_registry_present": false,
+        "current_method_paths": [],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": false
+      },
+      {
+        "function_id": "FN-GRADE-EVIDENCE-001",
+        "package_registry_present": false,
+        "current_registry_present": true,
+        "current_method_paths": [],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": true
+      },
+      {
+        "function_id": "FN-LOCK-SOURCE-001",
+        "package_registry_present": false,
+        "current_registry_present": true,
+        "current_method_paths": [],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": true
+      },
+      {
+        "function_id": "FN-NEXT-Q-001",
+        "package_registry_present": true,
+        "current_registry_present": false,
+        "current_method_paths": [],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": false
+      },
+      {
+        "function_id": "FN-NEXT-QUESTION-001",
+        "package_registry_present": false,
+        "current_registry_present": true,
+        "current_method_paths": [],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": true
+      },
+      {
+        "function_id": "FN-READ-SOURCE-001",
+        "package_registry_present": true,
+        "current_registry_present": false,
+        "current_method_paths": [
+          "01_system/04_function_method/README.md"
+        ],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": false
+      },
+      {
+        "function_id": "FN-REGISTER-QUESTION-001",
+        "package_registry_present": false,
+        "current_registry_present": true,
+        "current_method_paths": [
+          "01_system/04_function_method/REGISTER_QUESTION.yaml"
+        ],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": true
+      },
+      {
+        "function_id": "FN-RENDER-RESULT-001",
+        "package_registry_present": false,
+        "current_registry_present": true,
+        "current_method_paths": [],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": true
+      },
+      {
+        "function_id": "FN-RESULT-001",
+        "package_registry_present": true,
+        "current_registry_present": false,
+        "current_method_paths": [],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": false
+      },
+      {
+        "function_id": "FN-REVERSE-001",
+        "package_registry_present": true,
+        "current_registry_present": false,
+        "current_method_paths": [
+          "01_system/04_function_method/REVERSE_ANALYZE.yaml"
+        ],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": false
+      },
+      {
+        "function_id": "FN-REVERSE-ANALYZE-001",
+        "package_registry_present": false,
+        "current_registry_present": true,
+        "current_method_paths": [
+          "01_system/04_function_method/REVERSE_ANALYZE.yaml"
+        ],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": true
+      },
+      {
+        "function_id": "FN-SELECT-CENTER-001",
+        "package_registry_present": true,
+        "current_registry_present": true,
+        "current_method_paths": [
+          "01_system/04_function_method/SELECT_CENTER.yaml"
+        ],
+        "input_contract": "03_system_db_contract/00_input_contract/FUNCTION_INPUT_CONTRACT.yaml",
+        "output_contract": "03_system_db_contract/01_output_contract/FUNCTION_OUTPUT_CONTRACT.yaml",
+        "semantic_alignment": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+references:
+  source_seeds:
+    - SRC-PACKAGE-001
+  data_seeds:
+    - DATA-ROLE-BOUNDARY-001
+  relation_seeds:
+    - REL-AI-SEUNG-GITHUB-001
+  evidence_seeds:
+    - EVD-DIRECT-INSTRUCTION-001
+  comparison_seeds:
+    - CMP-SYSTEM-DB-001
+  result_seeds:
+    - RESULT-SAMPLE-001
+  question_seeds:
+    - Q-SAMPLE-001
+    - Q-ACTIVATE-001

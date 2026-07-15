@@ -1,0 +1,6 @@
+next_questions:
+  - question_id: Q-ACTIVATE-001
+    question: >
+      실제 for_instance Repo는 Relation Function이 요구하는
+      X/Y/Z/T 자리, capability, handoff, audit contract를 충족하는가?
+    status: open

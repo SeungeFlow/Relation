@@ -9,8 +9,10 @@
 - Relation DB Foundation: complete
 - Complete Local Cycle Sample: complete
 - System–DB Contract Foundation: complete
-- Book Package: source confirmed only
+- Book Package Installation: complete
+- Full Implementation Verification: not complete
 - Initial Structure Closure: not complete
+- Multi-instance Runtime Test: not complete
 ## Repository Areas
 
 - `00_manifest` — Repo 정체성·목적·상태

@@ -1,0 +1,39 @@
+{
+  "volume_load_receipt": {
+    "package_id": "ARSFIP-10V-20260714",
+    "volume_id": "VOL_10",
+    "sequence": 10,
+    "source_filename": "10_통합_Activation_Manifest_최종명칭_다음_Seed.md",
+    "source_sha256": "3a509ccf133627587afec64c2ee10b491681465b24a750147d1a05b37e417c35",
+    "source_bytes": 10187,
+    "full_read": true,
+    "definitions_loaded": true,
+    "guards_loaded": true,
+    "schemas_loaded": [],
+    "functions_loaded": [],
+    "imports": [
+      "VOL_01::package_load_protocol",
+      "VOL_02::concept_lineage_model",
+      "VOL_03::local_zero_model",
+      "VOL_04::center_cell_model",
+      "VOL_05::historical_forest_model",
+      "VOL_06::relation_bridge_contract",
+      "VOL_07::relation_repo_root_tree",
+      "VOL_08::function_registry",
+      "VOL_09::minimum_complete_cycle"
+    ],
+    "imports_resolved": true,
+    "exports": [
+      "final_package_identity",
+      "activation_manifest",
+      "global_dependency_map",
+      "completion_contract",
+      "next_seed_register"
+    ],
+    "exports_registered": true,
+    "repository_mutation_performed_during_load": false,
+    "volume_status": "VALIDATED",
+    "package_status": "ALL_10_VOLUMES_LOADED",
+    "expected_next_volume": null
+  }
+}

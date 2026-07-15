@@ -1,0 +1,50 @@
+package_id: ARSFIP-10V-20260714
+definitions:
+  AI_relation_Seung_relation_GitHub:
+    volume: VOL_01
+    status: canonical
+  Seed_Fruit_Cycle:
+    volume: VOL_02
+    status: canonical
+  Local.Zero:
+    volume: VOL_03
+    status: canonical
+  Reverse_Analysis:
+    volume: VOL_03
+    status: canonical
+  Space_State_Coordinate:
+    volume: VOL_04
+    status: canonical
+  Center_Cell:
+    volume: VOL_04
+    status: canonical
+  NbyN_Z_Axis:
+    volume: VOL_04
+    status: canonical_with_precondition
+  Historical_Forest:
+    volume: VOL_05
+    status: canonical
+  Multi_Causality:
+    volume: VOL_05
+    status: canonical
+  relation.bridge:
+    volume: VOL_06
+    status: canonical
+  Evidence_Taxonomy:
+    volume: VOL_06
+    status: canonical
+  Relation_Repo_System_DB:
+    volume: VOL_07
+    status: canonical
+  Function_Method:
+    volume: VOL_08
+    status: canonical
+  instance_X_Y_Z_T:
+    volume: VOL_08
+    status: provisional_mapping
+  Minimum_Complete_Cycle:
+    volume: VOL_09
+    status: canonical
+  Package_Official_Name:
+    volume: VOL_10
+    status: canonical

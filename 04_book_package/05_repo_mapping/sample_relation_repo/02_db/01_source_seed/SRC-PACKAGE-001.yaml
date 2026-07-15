@@ -1,0 +1,9 @@
+source_seed:
+  source_id: SRC-PACKAGE-001
+  source_type: book_package
+  title: AI-Decodable Relation Source-Field Installation Package
+  package_id: ARSFIP-10V-20260714
+  paths:
+    - 04_book_package/
+  role: canonical_design_source
+  status: sourced

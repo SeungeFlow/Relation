@@ -1,0 +1,16 @@
+schema:
+  title: Question Seed
+  required:
+    - question_id
+    - question
+    - status
+  properties:
+    question_id: {type: string}
+    parent_result: {type: [string, "null"]}
+    question: {type: string}
+    reason: {type: string}
+    active_fields: {type: array}
+    required_sources: {type: array}
+    required_functions: {type: array}
+    stop_condition: {type: string}
+    status: {type: string}

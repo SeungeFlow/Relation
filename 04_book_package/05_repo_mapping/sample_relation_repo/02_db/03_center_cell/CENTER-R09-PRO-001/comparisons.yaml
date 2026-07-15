@@ -1,0 +1,8 @@
+comparisons:
+  - comparison_id: CMP-SYSTEM-DB-001
+    candidates:
+      - system_and_db_same_repo_separate_areas
+      - system_and_db_separate_repositories
+      - relation_as_database_only
+      - for_instance_inside_relation
+    selected: system_and_db_same_repo_separate_areas

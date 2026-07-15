@@ -1,0 +1,28 @@
+{
+  "volume_load_receipt": {
+    "package_id": "ARSFIP-10V-20260714",
+    "volume_id": "VOL_01",
+    "sequence": 1,
+    "source_filename": "01_패키지_정체성_관계축_적재_프로토콜.md",
+    "source_sha256": "e2550659b15a4be07f3c5a284e19863549c68818382b939fa89fe651d131b5d2",
+    "source_bytes": 7756,
+    "full_read": true,
+    "definitions_loaded": true,
+    "guards_loaded": true,
+    "schemas_loaded": [],
+    "functions_loaded": [],
+    "imports": [],
+    "imports_resolved": true,
+    "exports": [
+      "canonical_relation_axis",
+      "repo_role_boundary",
+      "package_load_protocol",
+      "global_guards"
+    ],
+    "exports_registered": true,
+    "repository_mutation_performed_during_load": false,
+    "volume_status": "VALIDATED",
+    "package_status": "LOADING_SEQUENCE_VALID",
+    "expected_next_volume": "VOL_02"
+  }
+}

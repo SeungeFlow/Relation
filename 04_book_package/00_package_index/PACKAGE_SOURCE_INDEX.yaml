@@ -1,20 +1,34 @@
-package_source_index:
-  package_id: ARSFIP-10V-20260714
-  package_version: 0.1.0
-
-  sources:
-    - source_id: FULL-BUNDLE-001
-      filename: AI_Relation_Source_Field_Full_Bundle_v0.1.0.zip
-      sha256: ed24cafecb385c9486229f2a4b627a762a7b8e548f59225c71e1dbdf0db6eb9b
-      role: complete_source_and_reference_bundle
-
-    - source_id: TEN-VOLUME-001
-      filename: AI_Relation_Source_Field_10_Volume_Package_v0.1.0.zip
-      sha256: 6e4946b135dbd389f7140566d5c6fe1e66c60554548ad7d90b441eb69644e93f
-      role: indexed_sequential_ai_loading_package
-
-  source_location:
-    local_reference: 'C:\Branch\workspace\ctpA'
-
-  github_package_content_installed: false
-  status: SOURCE_CONFIRMED_ONLY
+{
+  "package_source_index": {
+    "package_id": "ARSFIP-10V-20260714",
+    "package_version": "0.1.0",
+    "sources": [
+      {
+        "source_id": "FULL-BUNDLE-001",
+        "filename": "AI_Relation_Source_Field_Full_Bundle_v0.1.0.zip",
+        "sha256": "ed24cafecb385c9486229f2a4b627a762a7b8e548f59225c71e1dbdf0db6eb9b",
+        "role": "complete_source_and_reference_bundle"
+      },
+      {
+        "source_id": "TEN-VOLUME-001",
+        "filename": "AI_Relation_Source_Field_10_Volume_Package_v0.1.0.zip",
+        "sha256": "6e4946b135dbd389f7140566d5c6fe1e66c60554548ad7d90b441eb69644e93f",
+        "role": "indexed_sequential_ai_loading_package"
+      }
+    ],
+    "source_location": {
+      "local_reference": "C:\\Branch\\workspace\\ctpA"
+    },
+    "github_package_content_installed": true,
+    "status": "PACKAGE_CONTENT_INSTALLED_CANDIDATE",
+    "installation": {
+      "all_volumes_loaded": true,
+      "source_internal_hashes_verified": true,
+      "github_package_content_installed": true,
+      "installation_commit": "RECORDED_IN_IMPLEMENTATION_HANDOFF",
+      "local_installation_verification": "PASS",
+      "independent_audit": "PENDING"
+    },
+    "release_status": "candidate"
+  }
+}

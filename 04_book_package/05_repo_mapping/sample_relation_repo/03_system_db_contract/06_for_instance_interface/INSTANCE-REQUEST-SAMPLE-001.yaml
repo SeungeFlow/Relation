@@ -1,0 +1,20 @@
+instance_assignment_request:
+  request_id: INSTANCE-REQUEST-SAMPLE-001
+  task_id: VALIDATE-ACTUAL-FOR-INSTANCE
+  function_ids:
+    - read_repository
+    - align_instance_seat
+    - compare_contract
+    - render_local_result
+  active_seat_schema:
+    X: source_package_question
+    Y: relation_interpretation
+    Z: structure_schema_verification
+    T: time_process_transition
+  required_coverage: [X, Y, Z, T]
+  required_capabilities:
+    - repository_reading
+    - contract_comparison
+    - independent_audit
+  independent_verification: true
+  mutation_authority: none

@@ -1,0 +1,89 @@
+package:
+  id: ARSFIP-10V-20260714
+  name_ko: AI 해독형 Relation Source-Field 구조설치 패키지
+  name_en: AI-Decodable Relation Source-Field Installation Package
+  short_name: Relation Source-Field Package
+  version: 0.1.0
+  release_status: candidate
+  date: '2026-07-14'
+  total_volumes: 10
+  canonical_target: GitHub Relation Repo
+canonical_relation_axis:
+- AI
+- 승이
+- GitHub
+repositories:
+  Relation: integrated System + DB + Contract + Book Package
+  for_instance: separate AI instance alignment repository
+  SeungeFlow: historical structural asset root
+  9Dot0: process memory and concept provenance candidate
+adapters:
+  git:
+    mandatory: false
+    role: optional query/version adapter
+  linux:
+    mandatory: false
+    role: optional git environment
+publication_files:
+- README.md
+- paper_ko.md
+- paper_en.md
+control_files:
+- package_manifest.yaml
+- volume_index.yaml
+- dependency_map.yaml
+- definition_index.yaml
+- load_protocol.md
+- upload_order.txt
+- hash_manifest.sha256
+volumes:
+- sequence: 1
+  id: VOL_01
+  file: volumes/01_패키지_정체성_관계축_적재_프로토콜.md
+  title: 패키지 정체성·관계축·적재 프로토콜
+- sequence: 2
+  id: VOL_02
+  file: volumes/02_형성과정_개념계보_과거_구조자산.md
+  title: 형성과정·개념계보·과거 구조자산
+- sequence: 3
+  id: VOL_03
+  file: volumes/03_Local.Zero_역검산_양방향_시간.md
+  title: Local.Zero·역검산·양방향 시간
+- sequence: 4
+  id: VOL_04
+  file: volumes/04_공간좌표_상태좌표_Cell_NbyN_Z.Axis.md
+  title: 공간좌표·상태좌표·Cell·NbyN Z.Axis
+- sequence: 5
+  id: VOL_05
+  file: volumes/05_역사숲_다중인과_반복_Pattern.md
+  title: 역사숲·다중인과·반복 Pattern
+- sequence: 6
+  id: VOL_06
+  file: volumes/06_relation.bridge_Evidence_비교군_인식구조.md
+  title: relation.bridge·Evidence·비교군·인식구조
+- sequence: 7
+  id: VOL_07
+  file: volumes/07_Relation_Repo_System–DB_통합_아키텍처.md
+  title: 'Relation Repo: System–DB 통합 아키텍처'
+- sequence: 8
+  id: VOL_08
+  file: volumes/08_Function_Schema_for_instance_인터페이스.md
+  title: Function·Schema·for_instance 인터페이스
+- sequence: 9
+  id: VOL_09
+  file: volumes/09_설치_검산_최소_완전순환_자본시장_Pilot.md
+  title: 설치·검산·최소 완전순환·자본시장 Pilot
+- sequence: 10
+  id: VOL_10
+  file: volumes/10_통합_Activation_Manifest_최종명칭_다음_Seed.md
+  title: 통합 Activation Manifest·최종명칭·다음 Seed
+sample_repository:
+  path: sample_relation_repo/
+  purpose: minimum complete Relation cycle
+  file_count: 40
+installation_guard:
+  load_is_not_install: true
+  all_volumes_required: true
+  independent_audit_required: true
+  empty_skeleton_not_allowed: true
+  approval_by_seung_required: true

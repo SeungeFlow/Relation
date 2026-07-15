@@ -1,6 +1,6 @@
 {
   "relation_repository_status": {
-    "stage": "SYSTEM_DB_CONTRACT_FOUNDATION_CREATED",
+    "stage": "BOOK_PACKAGE_INSTALLED",
     "design_validation": "CLOSED",
     "implementation": "IN_PROGRESS",
     "completed": [
@@ -10,20 +10,21 @@
       "db_area_foundation",
       "db_complete_local_cycle",
       "system_db_contract_foundation",
-      "data_evidence_comparison_schema_binding",
-      "function_input_output_binding",
-      "provenance_binding",
-      "version_binding_policy",
-      "mutation_policy",
-      "contract_integrity_check",
-      "for_instance_interface_foundation"
+      "book_package_source_validation",
+      "all_ten_volumes_loaded",
+      "package_dependency_validation",
+      "package_internal_hash_validation",
+      "book_package_content_installation",
+      "package_repo_mapping",
+      "package_installation_local_audit"
     ],
     "not_completed": [
-      "actual_for_instance_runtime_binding",
-      "book_package_installation",
       "full_implementation_verification",
+      "independent_implementation_audit",
       "initial_structure_closure",
-      "multi_instance_runtime_test"
+      "actual_for_instance_runtime_binding",
+      "multi_instance_runtime_test",
+      "external_domain_pilot"
     ],
     "completion_claim_allowed": false
   }

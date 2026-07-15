@@ -1,0 +1,9 @@
+function_output_contract:
+  function_id: FN-REVERSE-001
+  allowed_output_types:
+    - relation_seed
+    - result_seed
+    - question_seed
+  required_provenance: true
+  comparison_required: true
+  independent_verification_required: true

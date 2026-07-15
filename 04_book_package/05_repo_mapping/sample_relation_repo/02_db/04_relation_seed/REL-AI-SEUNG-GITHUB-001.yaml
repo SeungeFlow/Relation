@@ -1,0 +1,15 @@
+relation_seed:
+  relation_id: REL-AI-SEUNG-GITHUB-001
+  source_node: AI
+  target_node: GitHub
+  mediated_by: 승이
+  relation_role: structural_processing_axis
+  source_refs:
+    - SRC-PACKAGE-001
+  evidence_refs:
+    - EVD-DIRECT-INSTRUCTION-001
+  comparison_refs:
+    - CMP-SYSTEM-DB-001
+  status: local_closed
+  uncertainty: >
+    Actual GitHub connector and repository state remain to be tested.

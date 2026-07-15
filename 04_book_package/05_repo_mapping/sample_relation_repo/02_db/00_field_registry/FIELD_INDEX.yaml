@@ -1,0 +1,10 @@
+fields:
+  - field_id: FIELD-SYSTEM-DESIGN
+    title: System Design
+    status: active
+  - field_id: FIELD-HISTORICAL-RELATION
+    title: Historical Relation
+    status: active
+  - field_id: FIELD-CAPITAL-MARKET
+    title: Capital Market
+    status: future_pilot

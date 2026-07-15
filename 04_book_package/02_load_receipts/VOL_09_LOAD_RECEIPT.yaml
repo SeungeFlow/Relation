@@ -1,0 +1,35 @@
+{
+  "volume_load_receipt": {
+    "package_id": "ARSFIP-10V-20260714",
+    "volume_id": "VOL_09",
+    "sequence": 9,
+    "source_filename": "09_설치_검산_최소_완전순환_자본시장_Pilot.md",
+    "source_sha256": "fb9b89f454cc60207593361a30423de662089f897566b7ac420af1f20a235882",
+    "source_bytes": 10319,
+    "full_read": true,
+    "definitions_loaded": true,
+    "guards_loaded": true,
+    "schemas_loaded": [],
+    "functions_loaded": [],
+    "imports": [
+      "VOL_07::relation_repo_root_tree",
+      "VOL_08::function_registry",
+      "VOL_08::for_instance_interface",
+      "VOL_03::local_zero_model",
+      "VOL_06::evidence_taxonomy"
+    ],
+    "imports_resolved": true,
+    "exports": [
+      "load_install_protocol",
+      "minimum_complete_cycle",
+      "sample_relation_repo",
+      "multi_instance_test_plan",
+      "capital_market_pilot_boundary"
+    ],
+    "exports_registered": true,
+    "repository_mutation_performed_during_load": false,
+    "volume_status": "VALIDATED",
+    "package_status": "LOADING_SEQUENCE_VALID",
+    "expected_next_volume": "VOL_10"
+  }
+}

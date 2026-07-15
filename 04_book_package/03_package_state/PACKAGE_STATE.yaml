@@ -1,0 +1,32 @@
+{
+  "package_state": {
+    "package_id": "ARSFIP-10V-20260714",
+    "package_version": "0.1.0",
+    "release_status": "candidate",
+    "source": {
+      "full_bundle_hash_match": true,
+      "ten_volume_hash_match": true,
+      "internal_hash_manifest_verified": true
+    },
+    "loading": {
+      "total_volumes": 10,
+      "validated_volumes": 10,
+      "dependency_check": "PASS",
+      "definition_index": "PASS",
+      "guard_coverage": "PASS",
+      "status": "PACKAGE_VALIDATED"
+    },
+    "installation": {
+      "github_content_installed": true,
+      "installation_status": "INSTALLED",
+      "local_installation_check": "PASS",
+      "independent_audit": "PENDING"
+    },
+    "runtime": {
+      "actual_for_instance_binding": "NOT_PERFORMED",
+      "multi_instance_test": "NOT_PERFORMED",
+      "market_pilot": "NOT_PERFORMED"
+    },
+    "completion_claim_allowed": false
+  }
+}

@@ -1,0 +1,20 @@
+pipeline:
+  pipeline_id: PIPE-MINIMUM-CYCLE-001
+  ordered_functions:
+    - FN-READ-SOURCE-001
+    - FN-SELECT-CENTER-001
+    - FN-REVERSE-001
+    - FN-EVIDENCE-001
+    - FN-COMPARE-001
+    - FN-RESULT-001
+    - FN-NEXT-Q-001
+  required_cycle:
+    - question_seed
+    - source_seed
+    - data_seed
+    - center_cell
+    - relation_seed
+    - evidence_seed
+    - comparison_seed
+    - result_seed
+    - next_question_seed

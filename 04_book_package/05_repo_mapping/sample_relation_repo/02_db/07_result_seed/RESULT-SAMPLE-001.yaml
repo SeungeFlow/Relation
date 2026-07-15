@@ -1,0 +1,22 @@
+result_seed:
+  result_id: RESULT-SAMPLE-001
+  question_id: Q-SAMPLE-001
+  center_id: CENTER-R09-PRO-001
+  function_ids:
+    - FN-SELECT-CENTER-001
+    - FN-REVERSE-001
+    - FN-COMPARE-001
+    - FN-RESULT-001
+  source_ids:
+    - SRC-PACKAGE-001
+  relation_ids:
+    - REL-AI-SEUNG-GITHUB-001
+  comparison_ids:
+    - CMP-SYSTEM-DB-001
+  local_answer: >
+    Relation should integrate System and DB as separate areas within
+    one repository, while for_instance remains a separate alignment repository.
+  limitations:
+    - actual_for_instance_structure_not_yet_verified
+    - github_installation_not_yet_executed
+  status: local_closed

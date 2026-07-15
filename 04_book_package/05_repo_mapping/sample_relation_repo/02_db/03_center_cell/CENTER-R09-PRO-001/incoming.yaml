@@ -1,0 +1,7 @@
+incoming_relations:
+  - relation: earlier_design_treated_relation_as_memory_only
+    role: prior_state
+  - relation: system_method_and_data_need_version_binding
+    role: condition
+  - relation: for_instance_has_distinct_alignment_role
+    role: suppress_role_mixing

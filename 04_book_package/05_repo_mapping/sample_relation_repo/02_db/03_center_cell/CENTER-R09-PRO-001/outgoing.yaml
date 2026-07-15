@@ -1,0 +1,7 @@
+outgoing_relations:
+  - destination: actual_relation_repository_installation
+    status: conditional
+  - destination: for_instance_contract_validation
+    status: next_question
+  - destination: multi_instance_test
+    status: deferred

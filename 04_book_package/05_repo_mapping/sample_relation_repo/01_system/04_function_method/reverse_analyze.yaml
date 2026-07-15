@@ -1,0 +1,20 @@
+function_method:
+  function_id: FN-REVERSE-001
+  function_version: 0.1
+  title: Reverse Structural Analysis
+  input_contract:
+    required_seed_types: [center_cell, source_seed, data_seed]
+  process:
+    ordered_steps:
+      - extract_observed_result
+      - identify_immediate_prior_state
+      - classify_conditions_precursors_triggers
+      - attach_evidence
+      - build_comparisons
+      - mark_uncertainty
+  guards:
+    - reverse_reading_is_not_reverse_causality
+    - hindsight_is_not_prior_predictability
+    - comparison_is_required
+  output_contract:
+    output_seed_types: [relation_seed, result_seed, question_seed]

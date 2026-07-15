@@ -1,14 +1,14 @@
 {
   "id": "QUESTION-SAMPLE-003",
   "type": "question_seed",
-  "status": "OPEN",
+  "status": "ANSWERED_LOCAL",
   "source_refs": [
     "RESULT-CONTRACT-001"
   ],
   "created_by_function": "FN-NEXT-QUESTION-001",
   "function_version": "0.1-foundation",
   "prior_seed": "RESULT-CONTRACT-001",
-  "next_seed": null,
+  "next_seed": "RESULT-BOOK-001",
   "uncertainty": "medium",
   "question": "검증된 System·DB·Contract 위에 10-Volume Book Package와 README·paper_ko·paper_en을 어떤 Index 순서로 설치해야 하는가?",
   "scope": "04_book_package의 실제 본문 설치에 한정한다.",
