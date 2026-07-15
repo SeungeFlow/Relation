@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Center Cell",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "status",
+    "source_refs",
+    "created_by_function",
+    "function_version",
+    "prior_seed",
+    "next_seed",
+    "uncertainty",
+    "local_zero",
+    "event_time",
+    "analysis_time",
+    "boundary",
+    "observed_result"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_by_function": {
+      "type": "string"
+    },
+    "function_version": {
+      "type": "string"
+    },
+    "prior_seed": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "next_seed": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "uncertainty": {
+      "type": [
+        "string",
+        "number",
+        "null"
+      ]
+    },
+    "local_zero": {
+      "type": "string"
+    },
+    "event_time": {
+      "type": "string"
+    },
+    "analysis_time": {
+      "type": "string"
+    },
+    "boundary": {
+      "type": "string"
+    },
+    "observed_result": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

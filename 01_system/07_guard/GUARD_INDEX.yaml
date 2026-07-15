@@ -1,0 +1,39 @@
+{
+  "guards": [
+    {
+      "id": "G-SOURCE-001",
+      "negative": "source is not interpretation",
+      "positive": "source precedes interpretation"
+    },
+    {
+      "id": "G-RELATION-001",
+      "negative": "relation is not merge",
+      "positive": "relation is interconnecting"
+    },
+    {
+      "id": "G-CENTER-001",
+      "negative": "Local.Zero is not absolute origin",
+      "positive": "Local.Zero is a selected analysis center"
+    },
+    {
+      "id": "G-REVERSE-001",
+      "negative": "reverse reading is not reverse causality",
+      "positive": "reverse reading reconstructs prior relations"
+    },
+    {
+      "id": "G-RESULT-001",
+      "negative": "result is not final truth",
+      "positive": "result is a local closure and next seed"
+    },
+    {
+      "id": "G-VALIDATION-001",
+      "negative": "completed validation is not an endless loop",
+      "positive": "completed validation opens implementation"
+    },
+    {
+      "id": "G-CUTOVER-001",
+      "negative": "major change is not inserted silently",
+      "positive": "major change requires cutover and new handoff"
+    }
+  ]
+}

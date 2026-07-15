@@ -1,0 +1,25 @@
+{
+  "schemas": [
+    {
+      "seed_type": "question_seed",
+      "path": "question_seed.schema.yaml"
+    },
+    {
+      "seed_type": "source_seed",
+      "path": "source_seed.schema.yaml"
+    },
+    {
+      "seed_type": "center_cell",
+      "path": "center_cell.schema.yaml"
+    },
+    {
+      "seed_type": "relation_seed",
+      "path": "relation_seed.schema.yaml"
+    },
+    {
+      "seed_type": "result_seed",
+      "path": "result_seed.schema.yaml"
+    }
+  ],
+  "status": "FOUNDATION"
+}

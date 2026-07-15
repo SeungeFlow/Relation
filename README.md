@@ -1,8 +1,33 @@
 # Relation
-status: RESERVED_FOR_SEPARATE_INSTANCE
 
-이 Repository는 Relation System·DB·Contract·Book Package의
-상세 구조를 담당하는 별도 인스턴스를 위해 예약됐다.
+> AI 관계해석 System과 관계기억 DB가 동일 GitHub Repo에 공존하는 통합구조
 
-현재 단계에서는 Repository 이름과 시작 경계만 생성한다.
-상세 구조와 내용은 이 Repository를 담당하는 별도 인스턴스가 생성한다.
+## Current Status
+
+- Foundation Root: complete
+- Relation System: in implementation
+- Relation DB: not yet implemented
+- System–DB Contract: foundation only
+- Book Package: source confirmed only
+- Initial Structure Closure: not complete
+
+## Repository Areas
+
+- `00_manifest` — Repo 정체성·목적·상태
+- `01_system` — Theory·Function·Schema·Guard·Verification
+- `02_db` — Source·Data·Center·Relation·Evidence·Result 기억
+- `03_system_db_contract` — System과 DB 사이의 계약
+- `04_book_package` — AI 순차 해독용 10-Volume Package
+
+## Primary Relation
+
+```text
+AI relation
+→ 승이 relation
+→ GitHub
+```
+
+## Related Repositories
+
+- `SeungeFlow` — 과거 구조자산과 개념계보
+- `for_instance` — AI 인스턴스 자리·역할·인계 정렬
