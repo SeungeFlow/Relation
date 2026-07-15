@@ -1,0 +1,15 @@
+area_identity:
+  area: system_db_contract
+  purpose: System Function과 DB Seed 사이의 입출력·출처·Version·무결성 규칙을 정의한다.
+  input:
+    - function_requirement
+    - seed_schema
+  output:
+    - input_contract
+    - output_contract
+    - provenance_binding
+  connected_areas:
+    - 01_system
+    - 02_db
+    - for_instance
+  current_status: FOUNDATION_ONLY

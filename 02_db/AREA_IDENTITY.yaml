@@ -1,0 +1,14 @@
+area_identity:
+  area: relation_database
+  purpose: Source·Data·Center·Relation·Evidence·Comparison·Result·Question Seed를 저장한다.
+  input:
+    - source_seed
+    - system_function_output
+  output:
+    - structured_memory
+    - result_seed
+    - next_question_seed
+  connected_areas:
+    - 01_system
+    - 03_system_db_contract
+  current_status: FOUNDATION_ONLY

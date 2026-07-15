@@ -1,0 +1,21 @@
+relation_repository_status:
+  stage: FOUNDATION_ROOT_CREATED
+  design_validation: CLOSED
+  implementation: IN_PROGRESS
+
+  completed:
+    - source_package_confirmation
+    - top_level_root_creation
+    - manifest_minimum_files
+    - area_identity_files
+    - source_load_receipt
+
+  not_completed:
+    - system_substructure
+    - db_complete_local_cycle
+    - system_db_contract_files
+    - book_package_installation
+    - implementation_verification
+    - initial_structure_closure
+
+  completion_claim_allowed: false

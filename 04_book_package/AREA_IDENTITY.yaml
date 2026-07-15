@@ -1,0 +1,14 @@
+area_identity:
+  area: book_package
+  purpose: Relation 구조를 AI가 순차 해독하도록 10개 Volume과 Index를 보존한다.
+  input:
+    - full_bundle
+    - ten_volume_package
+  output:
+    - indexed_source_field
+    - installation_reference
+  connected_areas:
+    - 01_system
+    - 02_db
+    - 03_system_db_contract
+  current_status: FOUNDATION_ONLY
