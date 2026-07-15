@@ -1,6 +1,7 @@
 area_identity:
   area: book_package
-  purpose: Relation 구조를 AI가 순차 해독하도록 10개 Volume과 Index를 보존한다.
+  purpose: >
+    Relation 구조를 AI가 순차 해독하도록 10개 Volume과 Index를 보존한다.
   input:
     - full_bundle
     - ten_volume_package

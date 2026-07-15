@@ -1,6 +1,7 @@
 area_identity:
   area: relation_database
-  purpose: Source·Data·Center·Relation·Evidence·Comparison·Result·Question Seed를 저장한다.
+  purpose: >
+    Source·Data·Center·Relation·Evidence·Comparison·Result·Question Seed를 저장한다.
   input:
     - source_seed
     - system_function_output
