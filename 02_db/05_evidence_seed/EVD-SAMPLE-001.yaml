@@ -1,0 +1,24 @@
+{
+  "id": "EVD-SAMPLE-001",
+  "type": "evidence_seed",
+  "status": "VERIFIED_LOCAL",
+  "source_refs": [
+    "SRC-SAMPLE-001",
+    "01_system/03_function_registry/FUNCTION_INDEX.yaml",
+    "01_system/05_pipeline/RELATION_CYCLE.yaml",
+    "00_manifest/CURRENT_STATUS.yaml"
+  ],
+  "created_by_function": "FN-GRADE-EVIDENCE-001",
+  "function_version": "0.1-foundation",
+  "prior_seed": "REL-SAMPLE-001",
+  "next_seed": "CMP-SAMPLE-001",
+  "uncertainty": "low",
+  "supported_claim": "Relation System Foundation은 존재하며 Pipeline은 Question부터 Next Question까지의 순서를 정의하지만 DB 완전순환은 이전 상태에서 미구현이었다.",
+  "evidence_type": "repository_structure_and_version_state",
+  "observed_paths": [
+    "01_system/03_function_registry/FUNCTION_INDEX.yaml",
+    "01_system/05_pipeline/RELATION_CYCLE.yaml",
+    "00_manifest/CURRENT_STATUS.yaml"
+  ],
+  "schema_status": "PROVISIONAL_UNTIL_SYSTEM_DB_CONTRACT_STEP"
+}

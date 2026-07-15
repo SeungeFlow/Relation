@@ -1,6 +1,6 @@
 {
   "relation_repository_status": {
-    "stage": "SYSTEM_AREA_FOUNDATION_CREATED",
+    "stage": "DB_AREA_FOUNDATION_CREATED",
     "design_validation": "CLOSED",
     "implementation": "IN_PROGRESS",
     "completed": [
@@ -16,11 +16,18 @@
       "system_pipeline",
       "system_schema_foundation",
       "system_guard_foundation",
-      "system_verification_contract"
+      "system_verification_contract",
+      "db_substructure",
+      "field_registry_foundation",
+      "db_complete_local_cycle",
+      "sample_cycle_lineage",
+      "db_master_index"
     ],
     "not_completed": [
-      "db_complete_local_cycle",
       "system_db_contract_files",
+      "data_evidence_comparison_schema_binding",
+      "function_version_binding",
+      "for_instance_runtime_binding",
       "book_package_installation",
       "implementation_verification",
       "initial_structure_closure"

@@ -1,0 +1,21 @@
+{
+  "id": "DATA-SAMPLE-001",
+  "type": "data_seed",
+  "status": "ALIGNED_PROVISIONAL",
+  "source_refs": [
+    "SRC-SAMPLE-001"
+  ],
+  "created_by_function": "FOUNDATION-DATA-SELECTION",
+  "function_version": "0.1-provisional",
+  "prior_seed": "SRC-SAMPLE-001",
+  "next_seed": "CENTER-SAMPLE-001",
+  "uncertainty": "low",
+  "selected_data": [
+    "relation_cycle_requires_nine_ordered_stages",
+    "system_area_foundation_exists",
+    "db_complete_local_cycle_was_not_previously_implemented",
+    "comparison_and_next_question_are_required_for_local_closure"
+  ],
+  "schema_status": "PROVISIONAL_UNTIL_SYSTEM_DB_CONTRACT_STEP",
+  "active_field": "FIELD-RELATION-FOUNDATION"
+}

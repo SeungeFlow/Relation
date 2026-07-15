@@ -5,12 +5,12 @@
 ## Current Status
 
 - Foundation Root: complete
-- Relation System: in implementation
-- Relation DB: not yet implemented
+- Relation System Foundation: complete
+- Relation DB Foundation: complete
+- Complete Local Cycle Sample: complete
 - System–DB Contract: foundation only
 - Book Package: source confirmed only
 - Initial Structure Closure: not complete
-
 ## Repository Areas
 
 - `00_manifest` — Repo 정체성·목적·상태

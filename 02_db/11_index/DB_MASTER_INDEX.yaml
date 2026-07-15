@@ -1,0 +1,56 @@
+{
+  "db_master_index": {
+    "version": "0.1-foundation",
+    "active_field": "FIELD-RELATION-FOUNDATION",
+    "seeds": {
+      "QUESTION-SAMPLE-001": {
+        "type": "question_seed",
+        "path": "02_db/08_question_seed/QUESTION-SAMPLE-001.yaml"
+      },
+      "SRC-SAMPLE-001": {
+        "type": "source_seed",
+        "path": "02_db/01_source_seed/SRC-SAMPLE-001.yaml"
+      },
+      "DATA-SAMPLE-001": {
+        "type": "data_seed",
+        "path": "02_db/02_data_seed/DATA-SAMPLE-001.yaml"
+      },
+      "CENTER-SAMPLE-001": {
+        "type": "center_cell",
+        "path": "02_db/03_center_cell/CENTER-SAMPLE-001.yaml"
+      },
+      "REL-SAMPLE-001": {
+        "type": "relation_seed",
+        "path": "02_db/04_relation_seed/REL-SAMPLE-001.yaml"
+      },
+      "EVD-SAMPLE-001": {
+        "type": "evidence_seed",
+        "path": "02_db/05_evidence_seed/EVD-SAMPLE-001.yaml"
+      },
+      "CMP-SAMPLE-001": {
+        "type": "comparison_seed",
+        "path": "02_db/06_comparison_seed/CMP-SAMPLE-001.yaml"
+      },
+      "RESULT-SAMPLE-001": {
+        "type": "result_seed",
+        "path": "02_db/07_result_seed/RESULT-SAMPLE-001.yaml"
+      },
+      "QUESTION-SAMPLE-002": {
+        "type": "question_seed",
+        "path": "02_db/08_question_seed/QUESTION-SAMPLE-002.yaml"
+      }
+    },
+    "cycle": {
+      "lineage": "02_db/09_lineage/SAMPLE_CYCLE_LINEAGE.yaml",
+      "start": "QUESTION-SAMPLE-001",
+      "local_result": "RESULT-SAMPLE-001",
+      "next_question": "QUESTION-SAMPLE-002"
+    },
+    "integrity": {
+      "duplicate_ids": false,
+      "missing_seed_files": [],
+      "broken_prior_next_links": [],
+      "result_to_source_traceable": true
+    }
+  }
+}
