@@ -1,14 +1,14 @@
 {
   "id": "QUESTION-SAMPLE-004",
   "type": "question_seed",
-  "status": "OPEN",
+  "status": "ANSWERED_LOCAL",
   "source_refs": [
     "RESULT-BOOK-001"
   ],
   "created_by_function": "FN-NEXT-QUESTION-001",
   "function_version": "0.1-foundation",
   "prior_seed": "RESULT-BOOK-001",
-  "next_seed": null,
+  "next_seed": "RESULT-CLOSURE-001",
   "uncertainty": "medium",
   "question": "Relation의 Foundation·System·DB·System–DB Contract·Book Package가 승인된 구조와 실제 GitHub Tree에서 완전하게 일치하는가?",
   "scope": "Relation Repo 전체 구현검산과 Initial Structure Closure에 한정한다.",

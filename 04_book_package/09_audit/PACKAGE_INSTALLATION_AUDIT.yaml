@@ -48,6 +48,18 @@
       "result": "PASS"
     },
     "local_installation_result": "PASS",
-    "independent_audit": "PENDING"
+    "independent_audit": {
+      "auditor": "gpt.logi",
+      "evidence_package_sha256": "40284d3c7b671598a574eb8901c34b0e80deb09e7adecaabb5e49d6d734b060e",
+      "ten_volume_manifest_scope_resolution": {
+        "classification": "ARCHIVE_SUBSET_MANIFEST_SCOPE_MISMATCH",
+        "full_bundle_manifest": "PASS",
+        "ten_volume_zip_hash": "PASS",
+        "ten_volume_archive_integrity": "PASS",
+        "source_mutation_required": false,
+        "closure_blocking_defect": false
+      },
+      "result": "PASS"
+    }
   }
 }

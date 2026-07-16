@@ -1,0 +1,23 @@
+{
+  "initial_closure_stage_lineage": {
+    "lineage_id": "LINEAGE-INITIAL-CLOSURE-001",
+    "ordered_seeds": [
+      "QUESTION-SAMPLE-004",
+      "RESULT-CLOSURE-001",
+      "QUESTION-SAMPLE-005"
+    ],
+    "edges": [
+      {
+        "from": "QUESTION-SAMPLE-004",
+        "to": "RESULT-CLOSURE-001"
+      },
+      {
+        "from": "RESULT-CLOSURE-001",
+        "to": "QUESTION-SAMPLE-005"
+      }
+    ],
+    "independent_audit_present": true,
+    "initial_structure_closed": true,
+    "next_question_present": true
+  }
+}

@@ -1,8 +1,8 @@
 {
   "relation_repository_status": {
-    "stage": "BOOK_PACKAGE_INSTALLED",
+    "stage": "INITIAL_STRUCTURE_CLOSED",
     "design_validation": "CLOSED",
-    "implementation": "IN_PROGRESS",
+    "implementation": "INITIAL_STRUCTURE_COMPLETE",
     "completed": [
       "source_package_confirmation",
       "top_level_root_creation",
@@ -16,16 +16,20 @@
       "package_internal_hash_validation",
       "book_package_content_installation",
       "package_repo_mapping",
-      "package_installation_local_audit"
-    ],
-    "not_completed": [
+      "package_installation_local_audit",
       "full_implementation_verification",
       "independent_implementation_audit",
-      "initial_structure_closure",
+      "initial_structure_closure"
+    ],
+    "not_completed": [
       "actual_for_instance_runtime_binding",
       "multi_instance_runtime_test",
-      "external_domain_pilot"
+      "external_domain_pilot",
+      "field_validation",
+      "package_final_release"
     ],
-    "completion_claim_allowed": false
+    "initial_structure_completion_claim_allowed": true,
+    "runtime_completion_claim_allowed": false,
+    "field_validation_claim_allowed": false
   }
 }

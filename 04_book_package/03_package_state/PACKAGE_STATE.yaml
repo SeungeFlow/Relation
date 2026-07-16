@@ -20,13 +20,13 @@
       "github_content_installed": true,
       "installation_status": "INSTALLED",
       "local_installation_check": "PASS",
-      "independent_audit": "PENDING"
+      "independent_audit": "PASS"
     },
     "runtime": {
       "actual_for_instance_binding": "NOT_PERFORMED",
       "multi_instance_test": "NOT_PERFORMED",
       "market_pilot": "NOT_PERFORMED"
     },
-    "completion_claim_allowed": false
+    "completion_claim_allowed": "INITIAL_STRUCTURE_ONLY"
   }
 }

@@ -10,9 +10,12 @@
 - Complete Local Cycle Sample: complete
 - System–DB Contract Foundation: complete
 - Book Package Installation: complete
-- Full Implementation Verification: not complete
-- Initial Structure Closure: not complete
+- Full Implementation Verification: complete
+- Independent Implementation Audit: complete
+- Initial Structure Closure: complete
+- Actual for_instance Runtime Binding: not complete
 - Multi-instance Runtime Test: not complete
+- External Field Validation: not complete
 ## Repository Areas
 
 - `00_manifest` — Repo 정체성·목적·상태
