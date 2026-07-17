@@ -1,0 +1,26 @@
+generated_from:
+  version_doi: "10.5281/zenodo.21410576"
+  package_sha256: "42bb7089e5cdfb52eb951b3bb53613c7ed75168337c2a76524a0e47b5eefb88c"
+  manifest_digest: "5d1565212ef510ffe5576dc80449d928c0b1bfbe05cce24e12ee4426bbd18353"
+  schema_version: "1.0.0"
+registry:
+  conceptual_root: "Hash_Relation_Track_DB"
+  schema_version: "1.0.0"
+  canonical_position:
+    repository: "SeungeFlow/Relation"
+    branch: "main"
+    path: "05_hash_relation_track_registry/"
+  record_identity_field: "record_id"
+  append_only: true
+  record_namespaces:
+    - "RELATION_EXTENSION_ORIGIN"
+    - "HASH_RELATION_TRACK_DB_GENESIS"
+    - "SEMANTIC_IDENTITY"
+    - "OBJECT_STATE"
+    - "POSITION_BINDING"
+    - "SEMANTIC_RELATION"
+    - "TRACK_EVENT"
+    - "SEAT_OCCUPATION"
+    - "C_SNAPSHOT"
+  extension_origin_record_id: "RELATION_EXTENSION_ORIGIN-HRTDB-V1-0001"
+  genesis_binding_state: "PENDING"

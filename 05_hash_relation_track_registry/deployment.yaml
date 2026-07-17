@@ -1,0 +1,430 @@
+schema_name: active_schema_formation_publication_and_deployment_contract
+schema_version: "1.0.0"
+document_role: DEPLOYMENT_CONTRACT
+conceptual_root: Hash_Relation_Track_DB
+
+role_boundary:
+  independent_theory_processor:
+    responsibility:
+      - canonical_theory_composition
+      - crystallization_decision
+
+  independent_structure_verifier:
+    responsibility:
+      - structural_schema_composition
+      - final_independent_review
+
+  github_implementation_executor:
+    responsibility:
+      - approved_github_realization
+      - evidence_generation
+
+  human_networking_bridge:
+    responsibility:
+      - external_execution
+      - instance_handoff
+      - mutation_authorization
+      - publication_authorization
+
+  publication_authority:
+    explicit_authorization_required: true
+
+  rules:
+    - Design proposal is not mutation authorization.
+    - Provenance is not authority.
+    - External mutation requires explicit human authorization.
+    - Zenodo publication requires explicit human authorization.
+
+mutation_guard:
+  github_mutation_before_publication: false
+  github_mutation_before_Gate_0B_PASS: false
+  github_mutation_without_explicit_authorization: false
+  linux_mutation_without_explicit_authorization: false
+  zenodo_publication_before_package_verification: false
+  before_position_source_deletion: false
+
+formation_track:
+  direction: FORWARD
+
+  sequence:
+    - canonical_12_file_composition
+    - independent_cross_verification
+    - canonical_content_freeze
+    - eleven_payload_hash_calculation
+    - manifest_completion
+    - manifest_external_digest_calculation
+    - canonical_builder_executable_generation
+    - deterministic_ZIP_creation
+    - ZIP_SHA256_calculation
+    - ZIP_hash_filename_assignment
+    - gpt_logi_final_review_of_exact_frozen_ZIP
+    - explicit_publication_authorization
+    - Zenodo_publication
+    - DOI_issuance
+    - Gate_0B_pre_deployment_git_state
+    - deployment_set_D0
+    - genesis_binding_record
+    - genesis_binding_storage_commit_G1
+    - optional_pointer_projection
+    - genesis_C_projection
+    - genesis_closure
+
+publication_resolution:
+  direction: REVERSE
+  starts_from: Zenodo_DOI
+
+  sequence:
+    - Zenodo_record
+    - published_ZIP
+    - ZIP_filename_digest_verification
+    - ZIP_byte_SHA256_verification
+    - manifest_digest_verification
+    - eleven_payload_object_verification
+    - verified_Active_Schema
+
+runtime_resolution:
+  direction: REVERSE
+  starts_from: Relation_registry_commit
+
+  sequence:
+    - genesis_binding_record_resolution
+    - publication_identity_resolution
+    - package_identity_resolution
+    - content_identity_resolution
+    - deployment_set_D0_resolution
+    - current_Git_state_resolution
+    - current_Relation_track_resolution
+    - Observable_C_generation
+
+payload:
+  archive_root: Active_Schema/
+
+  required_package_files:
+    - Active_Schema/README.md
+    - Active_Schema/ROOT_CONTRACT.md
+    - Active_Schema/THEORY.md
+    - Active_Schema/NON_CLAIMS.md
+    - Active_Schema/position.yaml
+    - Active_Schema/seat.schema.yaml
+    - Active_Schema/relation.schema.yaml
+    - Active_Schema/C.schema.yaml
+    - Active_Schema/deployment.yaml
+    - Active_Schema/verification.md
+    - Active_Schema/restart.yaml
+    - Active_Schema/manifest.json
+
+  package_file_count: 12
+  hashed_payload_file_count: 11
+  manifest_file_count: 1
+
+text_normalization:
+  encoding: UTF-8
+  byte_order_mark: FORBIDDEN
+  unicode_normalization: NFC
+  newline: LF
+  trailing_whitespace: REMOVE
+  final_newline: REQUIRED
+
+manifest_contract:
+  payload_hash_algorithm: SHA-256
+  manifest_included_in_own_payload_list: false
+  manifest_digest_resolution: EXTERNAL_AFTER_MANIFEST_FREEZE
+  package_SHA256_inside_payload: FORBIDDEN
+  Zenodo_DOI_inside_pre_publication_payload: FORBIDDEN
+  deployment_commit_inside_pre_deployment_payload: FORBIDDEN
+
+canonical_ZIP_builder_contract:
+  archive_root: Active_Schema/
+  explicit_directory_entries: false
+
+  entry_order:
+    rule: LEXICOGRAPHIC_BY_UTF8_BYTES_OF_FULL_ARCHIVE_PATH
+
+  entry_path:
+    separator: "/"
+    absolute_paths: FORBIDDEN
+    parent_path_segments: FORBIDDEN
+
+  compression:
+    method: ZIP_STORED
+    method_id: "0"
+    data_descriptor: FORBIDDEN
+    ZIP64: FORBIDDEN
+
+  timestamp:
+    value: "1980-01-01 00:00:00"
+    timezone_semantics: NONE
+    rule: WRITE_EXACT_DOS_DATE_AND_TIME_FIELDS
+
+  header:
+    creator_system: UNIX
+    creator_system_id: "3"
+    version_made_by: "20"
+    version_needed_to_extract: "10"
+    general_purpose_bit_flags: "0x0800"
+    UTF8_filename_flag: REQUIRED
+
+  permissions:
+    file_mode: "100644"
+    external_file_attributes: "0x81A40000"
+    internal_file_attributes: "0"
+
+  metadata:
+    local_extra_fields: FORBIDDEN
+    central_extra_fields: FORBIDDEN
+    file_comments: EMPTY
+    archive_comment: EMPTY
+
+  content:
+    CRC32: STANDARD_ZIP_CRC32
+    uncompressed_size: EXACT
+    compressed_size: EQUAL_TO_UNCOMPRESSED_SIZE
+
+  implementation:
+    executable_is_canonical_component: false
+    executable_generation_time: AFTER_CONTENT_FREEZE
+    executable_verification_required_before_ZIP_creation: true
+
+final_review_gate:
+  reviewer_instance: gpt.logi
+  reviewed_object: EXACT_FROZEN_ZIP
+  required_result_for_publication: PASS
+  hold_or_fail_action:
+    - prohibit_publication_of_current_ZIP
+    - preserve_current_ZIP_as_rejected_or_held_evidence
+    - create_new_crystallized_object_if_correction_is_required
+  reviewer_must_not_modify_reviewed_ZIP: true
+
+package_identity:
+  algorithm: SHA-256
+  digest_format: 64_lowercase_hex
+
+  filename:
+    exact_rule: "<ZIP_SHA256>.zip"
+    prefix: FORBIDDEN
+    additional_suffix_before_dot_zip: FORBIDDEN
+    sidecar: FORBIDDEN
+
+  rules:
+    - The ZIP SHA-256 alone becomes the ZIP filename.
+    - The ZIP does not contain its own SHA-256.
+    - The manifest does not contain the final ZIP SHA-256.
+    - Filename digest must equal the actual ZIP byte SHA-256.
+
+Zenodo:
+  upload_file_count: 1
+  uploaded_file_rule: "<ZIP_SHA256>.zip"
+
+  required_metadata_bindings:
+    - object_name
+    - object_version
+    - conceptual_root
+    - package_SHA256
+    - package_filename
+    - manifest_digest
+    - formation_provenance
+    - GitHub_deployment_targets
+
+  DOI:
+    pre_publication_state: UNRESOLVED
+    resolution: FROM_ZENODO_RECORD
+
+Gate_0A_repository_position:
+  result: PASS
+  closure_state: CLOSED
+
+  targets:
+    Bridge:
+      repository: SeungeFlow/Bridge
+      branch: start_position
+      path: 01_active_schema/
+
+    for_instance:
+      repository: SeungeFlow/for_instance
+      branch: main
+      path: 09_active_schema_binding/
+
+    Relation:
+      repository: SeungeFlow/Relation
+      branch: main
+      path: 05_hash_relation_track_registry/
+
+Gate_0B_pre_deployment_git_state:
+  execution_time: IMMEDIATELY_BEFORE_GITHUB_MUTATION
+
+  required_for_each_target:
+    - current_branch_ref
+    - current_HEAD_commit
+    - current_root_tree
+    - target_path_collision_check
+    - baseline_change_check
+    - rollback_boundary
+
+  mismatch_action: HOLD
+  current_state: NOT_EXECUTED
+
+deployment_phases:
+
+  phase_0_publication:
+    output:
+      publication_set:
+        doi: D
+        package_sha256: H_package
+        manifest_digest: H_manifest
+
+  phase_1_deployment_set_D0:
+
+    Bridge_B0:
+      target:
+        repository: SeungeFlow/Bridge
+        branch: start_position
+        path: 01_active_schema/
+
+      payload:
+        - canonical_theory_projection
+        - root_contract_projection
+        - repository_position_contract_projection
+        - active_schema_publication_reference
+        - restart_reference
+
+      prohibited:
+        - future_genesis_binding_record_id
+        - future_G1_commit
+
+      output_commit: B0
+      output_tree: B0_TREE
+
+    for_instance_F0:
+      target:
+        repository: SeungeFlow/for_instance
+        branch: main
+        path: 09_active_schema_binding/
+
+      payload:
+        - active_schema_publication_reference
+        - seat_definition_contract_projection
+        - existing_initial_structure_relation
+        - cross_repository_handoff_contract
+        - relation_registry_namespace_reference
+
+      prohibited:
+        - future_genesis_binding_record_id
+        - future_G1_commit
+
+      output_commit: F0
+      output_tree: F0_TREE
+
+    Relation_R0:
+      target:
+        repository: SeungeFlow/Relation
+        branch: main
+        path: 05_hash_relation_track_registry/
+
+      payload:
+        - relation_extension_origin
+        - relation_registry_schema_projection
+        - empty_runtime_registry_base
+
+      prohibited:
+        - future_genesis_binding_record_id
+
+      output_commit: R0
+      output_tree: R0_TREE
+
+  phase_2_genesis_binding:
+    canonical_repository: SeungeFlow/Relation
+    canonical_path: 05_hash_relation_track_registry/
+
+    input:
+      publication_set:
+        doi: D
+        package_sha256: H_package
+        manifest_digest: H_manifest
+
+      deployment_set_D0:
+        Bridge:
+          commit: B0
+          tree: B0_TREE
+
+        for_instance:
+          commit: F0
+          tree: F0_TREE
+
+        Relation:
+          commit: R0
+          tree: R0_TREE
+
+    output:
+      record_type: HASH_RELATION_TRACK_DB_GENESIS
+      storage_commit: G1
+
+    self_reference_rule:
+      - Genesis Binding record does not contain G1.
+      - Git externally identifies the commit containing the record.
+
+  phase_3_optional_pointer_projection:
+    required: false
+
+    Bridge_B1:
+      may_add:
+        - genesis_binding_pointer
+
+    for_instance_F1:
+      may_add:
+        - genesis_binding_reference
+
+    rules:
+      - B1 and F1 do not redefine D0.
+      - Absence of B1 or F1 does not invalidate D0 and G1.
+
+  phase_4_genesis_closure:
+    output:
+      C_genesis:
+        publication_set:
+          doi: D
+          package_sha256: H_package
+          manifest_digest: H_manifest
+
+        deployment_set:
+          id: D0
+          Bridge: B0
+          for_instance: F0
+          Relation: R0
+
+        genesis_binding:
+          repository: SeungeFlow/Relation
+          storage_commit: G1
+
+        closure_state: CLOSED
+
+failure_policy:
+
+  before_mutation:
+    failure_action: HOLD
+
+  after_partial_valid_deployment:
+    actions:
+      - preserve_completed_valid_commits
+      - record_partial_deployment_state
+      - correct_only_failed_boundary
+      - do_not_delete_valid_completed_state
+
+  package_hash_mismatch:
+    action: FAIL_AND_REBUILD_PACKAGE
+
+  Zenodo_mismatch:
+    action: HOLD
+    mutation: PROHIBITED
+
+  Gate_0B_mismatch:
+    action: HOLD
+    mutation: PROHIBITED
+
+  Relation_closed_scope_violation:
+    action: FAIL
+    rollback_scope: NEW_EXTENSION_ONLY
+
+source_preservation:
+  before_position_deletion: false
+  existing_for_instance_history_deletion: false
+  existing_Relation_closed_structure_rewrite: false

@@ -1,0 +1,535 @@
+schema_name: hash_relation_track_registry_contract
+schema_version: "1.0.0"
+document_role: RELATION_RUNTIME_AND_SEMANTIC_REGISTRY_SCHEMA
+conceptual_root: Hash_Relation_Track_DB
+
+canonical_position:
+  repository: SeungeFlow/Relation
+  branch: main
+  path: 05_hash_relation_track_registry/
+
+registry_principles:
+  - Relation Repo is not the entire Hash Relation Track DB.
+  - Hash Relation Track Registry is an extension inside Relation Repo.
+  - Hash identifies an exact byte state.
+  - Hash is not truth or meaning.
+  - Object State is not Semantic Identity.
+  - Object State is not Position Binding.
+  - Position Binding is not Semantic Relation.
+  - Semantic Relation is not Track Event.
+  - Seat Definition is not Seat Occupation.
+  - C Snapshot is evidence and not a new source of truth.
+  - Runtime records are append-only.
+  - Previous record bytes remain unchanged.
+  - A new record may supersede an earlier record through explicit references.
+  - Effective state is derived and is not inserted into historical record bytes.
+  - A new Track Event references predecessors.
+  - Future next records are not predeclared.
+  - A record cannot contain the unknown hash of its own storage commit.
+  - Git physical lineage is referenced and not duplicated.
+
+canonical_record_identity:
+  field: record_id
+  immutable: true
+  unique_within_registry: true
+
+  prohibited_duplicate_identity_fields:
+    - semantic_identity_id
+    - object_state_id
+    - position_binding_id
+    - relation_id
+    - event_id
+    - occupation_id
+    - snapshot_id
+
+canonical_record_types:
+  count: 9
+  allowed:
+    - RELATION_EXTENSION_ORIGIN
+    - HASH_RELATION_TRACK_DB_GENESIS
+    - SEMANTIC_IDENTITY
+    - OBJECT_STATE
+    - POSITION_BINDING
+    - SEMANTIC_RELATION
+    - TRACK_EVENT
+    - SEAT_OCCUPATION
+    - C_SNAPSHOT
+
+state_vocabulary:
+
+  gate_result:
+    allowed:
+      - PASS
+      - FAIL
+      - HOLD
+
+  validation_state:
+    allowed:
+      - VERIFIED
+      - VALID_AS_METHOD
+      - PARTIAL
+      - CANDIDATE
+      - HOLD
+      - CONFLICT
+      - OUT_OF_SCOPE
+
+  lifecycle_state:
+    allowed:
+      - CURRENT
+      - SUPERSEDED
+      - RETIRED
+
+  closure_state:
+    allowed:
+      - OPEN
+      - CLOSED
+
+reference_schema:
+  required:
+    - namespace
+    - object_type
+    - object_id
+
+  optional:
+    - repository
+    - branch
+    - path
+
+  allowed_namespaces:
+    - ACTIVE_SCHEMA
+    - BRIDGE
+    - FOR_INSTANCE
+    - RELATION
+    - GIT
+    - ZENODO
+
+  rules:
+    - Namespace is never inferred only from object_id format.
+    - Git references are not Relation record identities.
+    - Seat Definition references use FOR_INSTANCE namespace.
+    - DOI references use ZENODO namespace.
+
+common_record_fields:
+  required:
+    - record_id
+    - record_type
+    - schema_version
+    - created_at
+    - created_by
+    - declared_state
+    - supersedes_refs
+    - evidence_refs
+
+  template:
+    record_id: ""
+    record_type: ""
+    schema_version: "1.0.0"
+    created_at: ""
+    created_by: ""
+
+    declared_state:
+      validation: CANDIDATE
+      lifecycle: CURRENT
+      closure: OPEN
+
+    supersedes_refs: []
+    evidence_refs: []
+
+record_composition_rule:
+  every_record:
+    composed_of:
+      - common_record_fields
+      - selected_record_type_fields
+
+effective_state:
+  storage: DERIVED_ONLY
+  stored_inside_historical_record: false
+
+  derived_from:
+    - declared_state
+    - supersedes_refs
+    - verification_relations
+    - closure_track_events
+    - current_valid_track_tips
+
+  rules:
+    - A valid later record that supersedes record A makes A effectively SUPERSEDED.
+    - Record A bytes remain unchanged.
+    - Effective closure may change through a later valid closure event.
+    - Effective state is projected through C.
+
+record_types:
+
+  RELATION_EXTENSION_ORIGIN:
+    purpose: Bind the new registry extension to the preserved Relation Initial Structure.
+
+    required_type_fields:
+      - closed_scope_base
+      - closure_record_state
+      - extension_position
+      - publication_identity
+      - package_identity
+      - content_identity
+      - relation
+
+    template:
+      closed_scope_base:
+        repository: SeungeFlow/Relation
+        commit: ff624832e5be2b195b8916113753b8b709574cfe
+        tree: 6ac428f2f8e1f57f0a55d3b86e8a76415eb01a05
+
+      closure_record_state:
+        repository: SeungeFlow/Relation
+        commit: cc4adf6891b53db0ec2e02ef4db8a1c9a9b41256
+        tree_resolution: FROM_GIT_COMMIT_OBJECT
+
+      extension_position:
+        repository: SeungeFlow/Relation
+        branch: main
+        path: 05_hash_relation_track_registry/
+
+      publication_identity:
+        namespace: ZENODO
+        object_type: DOI
+        object_id: ""
+
+      package_identity:
+        algorithm: SHA-256
+        digest: ""
+        filename: ""
+
+      content_identity:
+        algorithm: SHA-256
+        manifest_digest: ""
+
+      genesis_binding_state: PENDING
+
+      relation:
+        type: EXTENDS_CLOSED_SCOPE_WITHOUT_REWRITING
+        boundary_preserved: true
+
+    rules:
+      - This record does not reference a future Genesis Binding record.
+      - The closed-scope base and closure-record state are distinct Git states.
+      - Existing 00_manifest through 04_book_package are not rewritten.
+
+  HASH_RELATION_TRACK_DB_GENESIS:
+    purpose: Bind publication, package, content and first deployment identities.
+
+    required_type_fields:
+      - extension_origin_ref
+      - publication_identity
+      - package_identity
+      - content_identity
+      - deployment_set
+
+    template:
+      extension_origin_ref:
+        namespace: RELATION
+        object_type: RELATION_EXTENSION_ORIGIN
+        object_id: ""
+
+      conceptual_root: Hash_Relation_Track_DB
+
+      publication_identity:
+        namespace: ZENODO
+        object_type: DOI
+        object_id: ""
+
+      package_identity:
+        algorithm: SHA-256
+        digest: ""
+        filename: ""
+
+      content_identity:
+        algorithm: SHA-256
+        manifest_digest: ""
+
+      deployment_set:
+        set_id: D0
+
+        Bridge:
+          repository: SeungeFlow/Bridge
+          branch: start_position
+          path: 01_active_schema/
+          commit: ""
+          tree: ""
+
+        for_instance:
+          repository: SeungeFlow/for_instance
+          branch: main
+          path: 09_active_schema_binding/
+          commit: ""
+          tree: ""
+
+        Relation:
+          repository: SeungeFlow/Relation
+          branch: main
+          path: 05_hash_relation_track_registry/
+          commit: ""
+          tree: ""
+
+      runtime_storage:
+        containing_commit_resolution: FROM_GIT
+        containing_tree_resolution: FROM_GIT
+
+    rules:
+      - The record does not contain its own storage commit hash.
+      - Every Deployment Set Git state exists before this record is stored.
+      - Genesis Binding relates identities without merging them.
+
+  SEMANTIC_IDENTITY:
+    purpose: Define one contextual semantic identity independently from object bytes.
+
+    required_type_fields:
+      - canonical_name
+      - definition
+      - semantic_scope
+      - semantic_version
+
+    template:
+      canonical_name: ""
+      definition: ""
+      semantic_scope: ""
+      semantic_version: ""
+
+    rules:
+      - Semantic Identity is not Object State.
+      - One Object State may relate to multiple Semantic Identities.
+      - A later interpretation creates a new record and may supersede an earlier record.
+
+  OBJECT_STATE:
+    purpose: Identify one exact immutable byte state.
+
+    required_type_fields:
+      - identity
+      - root_binding_ref
+
+    template:
+      identity:
+        algorithm: SHA-256
+        digest: ""
+        byte_length: ""
+        media_type: ""
+
+      root_binding_ref:
+        namespace: RELATION
+        object_type: HASH_RELATION_TRACK_DB_GENESIS
+        object_id: ""
+
+    rules:
+      - Canonical byte identity key is algorithm plus digest.
+      - byte_length is a verification field.
+      - Meaning and position are not embedded in this record.
+      - One exact byte state may have multiple Position Bindings.
+
+  POSITION_BINDING:
+    purpose: Bind one Object State to one physical or logical position.
+
+    required_type_fields:
+      - object_state_ref
+      - field
+      - git_binding
+      - canonicality
+
+    template:
+      object_state_ref:
+        namespace: RELATION
+        object_type: OBJECT_STATE
+        object_id: ""
+
+      field:
+        account: SeungeFlow
+        repository: ""
+        branch: ""
+        path: ""
+        filename: ""
+
+      git_binding:
+        repository: ""
+        branch: ""
+        commit: ""
+        tree: ""
+        blob: ""
+
+      canonicality:
+        state: CANDIDATE
+        allowed:
+          - CANONICAL
+          - PROJECTION
+          - MIRROR
+          - ARCHIVED
+          - CANDIDATE
+
+    rules:
+      - Referenced Git state must exist before the Position Binding record storage commit.
+      - The record cannot refer to its own unknown storage commit.
+      - Same Object State may have multiple Position Binding records.
+      - Position change does not imply byte-state change.
+
+  SEMANTIC_RELATION:
+    purpose: Connect independent objects or records while preserving their boundaries.
+
+    required_type_fields:
+      - from_ref
+      - to_ref
+      - relation_type
+      - boundary_preserved
+
+    template:
+      from_ref:
+        namespace: ""
+        object_type: ""
+        object_id: ""
+
+      to_ref:
+        namespace: ""
+        object_type: ""
+        object_id: ""
+
+      relation_type: ""
+      semantic_scope: ""
+      boundary_preserved: true
+      source_refs: []
+
+    allowed_relation_examples:
+      - HAS_SEMANTIC_IDENTITY
+      - BINDS_WITHOUT_REWRITING
+      - EXTENDS_CLOSED_SCOPE_WITHOUT_REWRITING
+      - RECORDS_CLOSURE_OF
+      - PROJECTS_TO
+      - REFERENCES_PUBLICATION
+      - HANDS_OFF_TO
+      - SUPERSEDES
+      - EVIDENCED_BY
+
+    rules:
+      - Relation does not merge object identities.
+      - Conflicting relations remain independently observable.
+      - A relation cannot obtain authority merely by existing.
+
+  TRACK_EVENT:
+    purpose: Record an append-only logical transition within one explicit track.
+
+    required_type_fields:
+      - track_scope
+      - event_type
+      - subject_refs
+      - predecessor_refs
+      - generated_by
+      - occurred_at
+
+    template:
+      track_scope:
+        track_id: ""
+        semantic_scope: ""
+
+        root_binding_ref:
+          namespace: RELATION
+          object_type: HASH_RELATION_TRACK_DB_GENESIS
+          object_id: ""
+
+      event_type: ""
+      subject_refs: []
+      predecessor_refs: []
+
+      generated_by:
+        seat_definition_ref:
+          namespace: FOR_INSTANCE
+          object_type: SEAT_DEFINITION
+          object_id: ""
+          repository: SeungeFlow/for_instance
+          branch: main
+          path: 09_active_schema_binding/
+
+        seat_occupation_ref:
+          namespace: RELATION
+          object_type: SEAT_OCCUPATION
+          object_id: ""
+
+        actor_identity: ""
+
+      occurred_at: ""
+      git_refs: []
+
+    rules:
+      - predecessor_refs contain only TRACK_EVENT references.
+      - predecessor_refs may be empty only for a genesis event.
+      - Previous events remain immutable.
+      - next_event is never stored.
+      - Multiple valid current tips indicate a branch.
+      - Multiple tips are not automatically conflict or merge.
+      - Convergence preserves predecessor identities.
+
+  SEAT_OCCUPATION:
+    purpose: Record runtime occupation of a stable for_instance Seat Definition.
+
+    required_type_fields:
+      - seat_definition_ref
+      - instance_identity
+      - started_at
+      - input_refs
+
+    template:
+      seat_definition_ref:
+        namespace: FOR_INSTANCE
+        object_type: SEAT_DEFINITION
+        object_id: ""
+        repository: SeungeFlow/for_instance
+        branch: main
+        path: 09_active_schema_binding/
+
+      instance_identity: ""
+      started_at: ""
+      ended_at: null
+      input_refs: []
+      result_refs: []
+
+    rules:
+      - Seat Definition remains in for_instance.
+      - New Seat Occupation records are created only for new runtime events.
+      - Existing for_instance assignment history is not automatically migrated.
+      - Result handoff creates a TRACK_EVENT.
+      - Private chain-of-thought is not stored.
+
+  C_SNAPSHOT:
+    purpose: Preserve a closure-time Observable C projection as immutable evidence.
+
+    required_type_fields:
+      - projection_object_state_ref
+      - generated_from
+      - snapshot_contract
+
+    template:
+      projection_object_state_ref:
+        namespace: RELATION
+        object_type: OBJECT_STATE
+        object_id: ""
+
+      generated_from:
+        relation_registry_commit: ""
+        repository_refs: []
+
+      snapshot_contract:
+        format: CANONICAL_JSON
+        schema: Active_Schema/C.schema.yaml
+
+    rules:
+      - Live C is generated on demand and need not be committed.
+      - C Snapshot is evidence and not a canonical registry.
+      - Snapshot bytes have a separate OBJECT_STATE record.
+      - The C Snapshot record does not contain its own unknown storage commit.
+
+append_only_correction:
+  rules:
+    - Create a new correction or superseding record.
+    - Reference the earlier record through supersedes_refs.
+    - Record the correction reason.
+    - Never silently rewrite historical semantic state.
+
+current_tip_resolution:
+  rules:
+    - Select events with the same track_id and root binding.
+    - Exclude events effectively superseded by valid later records.
+    - A current tip is not referenced as a predecessor by another current valid event.
+    - Multiple current tips remain a branch set.
