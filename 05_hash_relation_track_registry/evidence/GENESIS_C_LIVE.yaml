@@ -1,0 +1,145 @@
+projection_id: "C-GENESIS-HRTDB-V1-0001"
+schema_version: "1.0.0"
+generated_at: "2026-07-17T11:07:38Z"
+generated_from:
+  relation_registry_commit: "b249a40e368453036de14499d3e2e061ac4e2dbd"
+  repository_refs:
+    -
+      namespace: "GIT"
+      object_type: "COMMIT"
+      object_id: "402aee9a5e738479b75087524d19c0bb393678d6"
+      repository: "SeungeFlow/for_instance"
+      branch: "main"
+    -
+      namespace: "GIT"
+      object_type: "COMMIT"
+      object_id: "b249a40e368453036de14499d3e2e061ac4e2dbd"
+      repository: "SeungeFlow/Relation"
+      branch: "main"
+    -
+      namespace: "GIT"
+      object_type: "COMMIT"
+      object_id: "48bed53cf4d7b32d42a2ecce1d5cb59667bf7e83"
+      repository: "SeungeFlow/Bridge"
+      branch: "start_position"
+  prior_verified_snapshot_ref: null
+root:
+  conceptual_root: "Hash_Relation_Track_DB"
+  publication_doi: "10.5281/zenodo.21410576"
+  active_schema_package_sha256: "42bb7089e5cdfb52eb951b3bb53613c7ed75168337c2a76524a0e47b5eefb88c"
+  active_schema_manifest_digest: "5d1565212ef510ffe5576dc80449d928c0b1bfbe05cce24e12ee4426bbd18353"
+  genesis_binding_record_id: "HASH_RELATION_TRACK_DB_GENESIS-HRTDB-V1-0001"
+  genesis_binding_storage_commit: "b249a40e368453036de14499d3e2e061ac4e2dbd"
+deployment:
+  deployment_set_id: "D0"
+  Bridge:
+    repository: "SeungeFlow/Bridge"
+    branch: "start_position"
+    path: "01_active_schema/"
+    payload_commit: "f0317cdbd8969bdf95bc7500c3110e98933a29af"
+    payload_tree: "9749ae79c62ccc3b95b90d62c9b96b13ef4d702a"
+    current_commit: "48bed53cf4d7b32d42a2ecce1d5cb59667bf7e83"
+    current_tree: "6ccce1ec9b8a2d36f81442a3e4e40903bc874635"
+  for_instance:
+    repository: "SeungeFlow/for_instance"
+    branch: "main"
+    path: "09_active_schema_binding/"
+    payload_commit: "fa9e0bc5b9ee9c1590574e77550a77cdcda88bd4"
+    payload_tree: "8caf5845207a8fd24b7781a8bb073e26a769fc09"
+    current_commit: "402aee9a5e738479b75087524d19c0bb393678d6"
+    current_tree: "33a2a5366b92322c06e486b93f8cb39fec0ee365"
+  Relation:
+    repository: "SeungeFlow/Relation"
+    branch: "main"
+    path: "05_hash_relation_track_registry/"
+    payload_commit: "8819ec0c8c74cd19e88a7f9abe0def3b84bf3dfa"
+    payload_tree: "dc2d39038fb566728718bc412f0c112dbea534ac"
+    genesis_binding_storage_commit: "b249a40e368453036de14499d3e2e061ac4e2dbd"
+    current_commit: "b249a40e368453036de14499d3e2e061ac4e2dbd"
+    current_tree: "388dfb6f0f97de737594fb065b65b5390bdd6267"
+declared_state:
+  validation: "VERIFIED"
+  lifecycle: "CURRENT"
+  closure: "CLOSED"
+effective_state:
+  validation: "VERIFIED"
+  lifecycle: "CURRENT"
+  closure: "CLOSED"
+  derived_from_record_ids:
+    - "HASH_RELATION_TRACK_DB_GENESIS-HRTDB-V1-0001"
+    - "RELATION_EXTENSION_ORIGIN-HRTDB-V1-0001"
+current_objects:
+  semantic_identity_refs: []
+  object_state_refs: []
+  position_binding_refs: []
+  semantic_relation_refs: []
+  track_event_tip_refs: []
+  seat_occupation_refs: []
+delta:
+  object_state:
+    added: []
+    removed: []
+    superseded: []
+  position_binding:
+    added: []
+    removed: []
+    canonicality_changed: []
+  semantic_identity:
+    added: []
+    superseded: []
+    relation_changed: []
+  semantic_relation:
+    added: []
+    superseded: []
+    conflicted: []
+  track_event:
+    added: []
+    current_tips_changed: []
+    branched_tracks: []
+  seat_occupation:
+    started: []
+    ended: []
+    result_handoffs: []
+  git:
+    changed_refs:
+      - "SeungeFlow/Bridge@start_position:f0317cdbd8969bdf95bc7500c3110e98933a29af"
+      - "SeungeFlow/for_instance@main:fa9e0bc5b9ee9c1590574e77550a77cdcda88bd4"
+      - "SeungeFlow/Relation@main:8819ec0c8c74cd19e88a7f9abe0def3b84bf3dfa"
+      - "SeungeFlow/Relation@main:b249a40e368453036de14499d3e2e061ac4e2dbd"
+      - "SeungeFlow/Bridge@start_position:48bed53cf4d7b32d42a2ecce1d5cb59667bf7e83"
+      - "SeungeFlow/for_instance@main:402aee9a5e738479b75087524d19c0bb393678d6"
+singularity:
+  negative: []
+  positive:
+    - "HASH_RELATION_TRACK_DB_GENESIS_OBSERVABLE"
+    - "PUBLISHED_ACTIVE_SCHEMA_BOUND_TO_GITHUB_DEPLOYMENT"
+evidence:
+  gate_results:
+    - "DEPLOYMENT_SET_D0:PASS"
+    - "GATE_0B:PASS"
+    - "GENESIS_BINDING:PASS"
+    - "PACKAGE_VERIFICATION:PASS"
+    - "POINTER_PROJECTION:PASS"
+    - "PRESERVATION:PASS"
+  verification_refs:
+    -
+      namespace: "RELATION"
+      object_type: "HASH_RELATION_TRACK_DB_GENESIS"
+      object_id: "HASH_RELATION_TRACK_DB_GENESIS-HRTDB-V1-0001"
+    -
+      namespace: "RELATION"
+      object_type: "RELATION_EXTENSION_ORIGIN"
+      object_id: "RELATION_EXTENSION_ORIGIN-HRTDB-V1-0001"
+    -
+      namespace: "ZENODO"
+      object_type: "DOI"
+      object_id: "10.5281/zenodo.21410576"
+  unresolved_mismatches: []
+open_boundaries: []
+next_position:
+  state: "GENESIS_CLOSED_READY_FOR_RUNTIME_RECORDS"
+  required_conditions:
+    - "APPEND_ONLY_RUNTIME_RECORDS"
+    - "EXPLICIT_MUTATION_AUTHORIZATION"
+    - "OBSERVABLE_EVIDENCE"
+  candidate_seat_definition_refs: []

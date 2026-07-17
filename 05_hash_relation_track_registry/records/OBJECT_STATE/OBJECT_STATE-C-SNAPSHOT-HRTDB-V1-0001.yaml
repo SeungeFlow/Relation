@@ -1,0 +1,30 @@
+record_id: "OBJECT_STATE-C-SNAPSHOT-HRTDB-V1-0001"
+record_type: "OBJECT_STATE"
+schema_version: "1.0.0"
+created_at: "2026-07-17T11:07:38Z"
+created_by: "gpt.github"
+declared_state:
+  validation: "VERIFIED"
+  lifecycle: "CURRENT"
+  closure: "CLOSED"
+supersedes_refs: []
+evidence_refs:
+  -
+    namespace: "RELATION"
+    object_type: "HASH_RELATION_TRACK_DB_GENESIS"
+    object_id: "HASH_RELATION_TRACK_DB_GENESIS-HRTDB-V1-0001"
+  -
+    namespace: "GIT"
+    object_type: "COMMIT"
+    object_id: "b249a40e368453036de14499d3e2e061ac4e2dbd"
+    repository: "SeungeFlow/Relation"
+    branch: "main"
+identity:
+  algorithm: "SHA-256"
+  digest: "ab6f440c463dc655afca5a107fd35b903ff4e2d77af75c45fde1eaa0a0a10743"
+  byte_length: "4547"
+  media_type: "application/json"
+root_binding_ref:
+  namespace: "RELATION"
+  object_type: "HASH_RELATION_TRACK_DB_GENESIS"
+  object_id: "HASH_RELATION_TRACK_DB_GENESIS-HRTDB-V1-0001"
