@@ -1,0 +1,38 @@
+record_id: "OBJECT_STATE-HRTDB-PILOT-RESULT-DATA-0001-XYZ-0001"
+record_type: "OBJECT_STATE"
+schema_version: "1.0.0"
+created_at: "2026-07-17T12:09:26Z"
+created_by:
+  role: "GITHUB_IMPLEMENTATION_EXECUTOR"
+  instance_provenance: "gpt.github"
+declared_state:
+  validation: "VERIFIED"
+  lifecycle: "CURRENT"
+  closure: "CLOSED"
+supersedes_refs: []
+evidence_refs:
+  -
+    namespace: "GIT"
+    object_type: "COMMIT"
+    object_id: "cf42bd6eefeaab73bba7d925e2c72428f391c1b6"
+    repository: "SeungeFlow/Relation"
+    branch: "main"
+  -
+    namespace: "GIT"
+    object_type: "BLOB"
+    object_id: "9a4377b6dfe6db0bcd21acd22afd1e4b48b47495"
+    repository: "SeungeFlow/Relation"
+    branch: "main"
+  -
+    namespace: "ZENODO"
+    object_type: "DOI"
+    object_id: "10.5281/zenodo.21410576"
+identity:
+  algorithm: "SHA-256"
+  digest: "467de0ea31b8bf663f33eed6681fbb140ed8dc846fe88cf1dcf470c646edcf70"
+  byte_length: "84991"
+  media_type: "text/markdown"
+root_binding_ref:
+  namespace: "RELATION"
+  object_type: "HASH_RELATION_TRACK_DB_GENESIS"
+  object_id: "HASH_RELATION_TRACK_DB_GENESIS-HRTDB-V1-0001"
