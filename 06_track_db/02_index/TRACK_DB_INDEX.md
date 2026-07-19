@@ -26,3 +26,24 @@ File명이나 Hash Code를 문서 내부 Index 값으로 사용하지 않는다.
 ## Initial State
 
 No runtime Track DB Document is registered at foundation creation.
+
+## Track Record — HRTDB_PILOT_RESULT_DATA_0002_XYZ
+
+- track_record_id: HRTDB_PILOT_RESULT_DATA_0002_XYZ
+- persistence_record_class: TRACK_DB_DOCUMENT
+- canonical_role: Track.DB.Record
+- source_runtime_object_class: RESULT_DATA
+- subject_id: AI_DATA_CENTER_FUSION_RELATION
+- cycle_id: HRTDB_PILOT_DATA_0002
+- generated_by_instance: gpt.xyz
+- function_review_instances: gpt.xy, gpt.xz, gpt.yz
+- structure_verified_by_system: gpt.xyzt
+- structure_verified_by_runtime_instance: gpt.logi
+- stored_by_instance: gpt.github
+- result_data_verdict: PASS_RESULT_DATA_WITH_UNRESOLVED_ITEMS
+- content_source_state: PRESERVED
+- instance_lineage_state: PRESERVED
+- correction_state: PRESERVED_WITH_UNRESOLVED_ITEMS
+- unresolved_state: PRESENT_AND_PRESERVED
+- original_bytes_state: BYTE_IDENTICAL
+- registration_state: REGISTERED
