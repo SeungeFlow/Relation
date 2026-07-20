@@ -16,3 +16,12 @@ Structure는 변경하지 않는다. 이 Registry는 그 Scope를
 
 Git은 물리적 Commit·Tree·Parent 계보를 보존하고, Relation Record는 의미적
 계보와 Runtime 관계를 Append-Only로 보존한다.
+
+<!-- ACTIVE_SCHEMA_V2_REGISTRY_START -->
+## Version 2.0.0
+
+- DOI: https://doi.org/10.5281/zenodo.21453793
+- Package SHA-256: `0b0317dadfd333c151c9b3f5e4c930d048c76e39fe037914f01ae9767c6d2b30`
+- Version pointer: `versions/2.0.0/`
+- Full mirror: `../../06_active_schema/releases/2.0.0/Active_Schema/`
+<!-- ACTIVE_SCHEMA_V2_REGISTRY_END -->

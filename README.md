@@ -36,3 +36,15 @@ AI relation
 
 - `SeungeFlow` — 과거 구조자산과 개념계보
 - `for_instance` — AI 인스턴스 자리·역할·인계 정렬
+
+<!-- ACTIVE_SCHEMA_V2_BINDING_START -->
+## Active_Schema Version 2.0.0
+
+- Version DOI: https://doi.org/10.5281/zenodo.21453793
+- Concept DOI: https://doi.org/10.5281/zenodo.21453792
+- Exact ZIP SHA-256: `0b0317dadfd333c151c9b3f5e4c930d048c76e39fe037914f01ae9767c6d2b30`
+- GitHub mirror: `06_active_schema/releases/2.0.0/Active_Schema/`
+- Relation Registry pointer: `05_hash_relation_track_registry/versions/2.0.0/`
+
+The published Active_Schema is a public Architecture and does not replace canonical Track DB payloads.
+<!-- ACTIVE_SCHEMA_V2_BINDING_END -->

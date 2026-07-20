@@ -1,0 +1,85 @@
+{
+  "object_id": "HRTDB_ACTIVE_SCHEMA_ZENODO_METADATA_RELEASE_0002",
+  "object_class": "ZENODO_METADATA_REFERENCE",
+  "release_phase_id": "AS_F8_3",
+  "binding_state": "FINAL_FOR_HUMAN_ENTRY_AND_RELEASE_REFERENCE",
+  "metadata_usage": {
+    "primary": "HUMAN_ENTRY_AND_RELEASE_REFERENCE",
+    "direct_zenodo_api_payload": false,
+    "reason": "The fields preserve release metadata and include explicit UI/API mappings; they are not a verbatim deposition API request body."
+  },
+  "zenodo_ui_mapping": {
+    "resource_type": "Publication",
+    "publication_type": "Technical note",
+    "creator_entry_mode": "Person"
+  },
+  "zenodo_api_mapping_reference": {
+    "upload_type": "publication",
+    "publication_type": "technicalnote",
+    "creator_name_mapping": {
+      "family_name": "Lee",
+      "given_name": "Seung"
+    }
+  },
+  "title": "HRTDB Active_Schema: 존재의 상태와 기준장을 위한 분산 AI 시스템 및 관계형 기억 구조",
+  "additional_title_en": "HRTDB Active_Schema: A Distributed AI System and Relational Memory Architecture for States of Existence and Reference Fields",
+  "language": "kor",
+  "version": "2.0.0",
+  "publication_date": "2026-07-20",
+  "creator": [
+    {
+      "type": "personal",
+      "family_name": "Lee",
+      "given_name": "Seung",
+      "display": "Lee, Seung"
+    }
+  ],
+  "contributors": [],
+  "license": {
+    "id": "CC-BY-4.0",
+    "title": "Creative Commons Attribution 4.0 International"
+  },
+  "visibility": "public",
+  "publisher": "Zenodo",
+  "description_ko": "HRTDB Active_Schema는 서로 다른 AI 인스턴스가 고정된 Seat 역할을 유지하면서 하나의 Target을 공동 처리하고, 그 진행과정과 결과를 관계형 기억자산으로 보존하기 위한 공개 구조설계다. 이 구조는 `for_instance`를 인스턴스가 모일 수 있는 Seat·정렬 기반장으로, `gpt.xyzt`를 하나의 Cycle을 관제하는 고정 System Seat로, 일곱 개의 독립 인스턴스를 Data·Function·Result·재관측·Result.Data 형성의 실행 Set으로 둔다. 하나의 Cycle은 하나의 Target과 하나의 Order를 공유하며, 승이의 단계별 전달을 통해 `Data → Function.1 → Result → Function.2 → Result.Data`로 진행된다. 두 번째 Function은 외부화된 Result를 다시 관측하여 오독·누락·경계오류와 Correction 필요지점을 찾는다. 완성된 Result.Data는 `gpt.xyzt`의 구조·방향검산을 통과한 뒤 Track DB 정본후보가 되며, 승격되지 않은 실험상태는 Singularity로 보존된다. Hash DB는 Track DB에서 파생되는 검색·주소·관계 관제구조로 정의되지만 본 공개본에서는 구현완료가 아닌 설계후보로 남는다. Active_Schema는 Track DB, Hash DB, Singularity를 병합하지 않고 각 객체의 Identity·Source·Lineage·상태를 유지한 채 하나의 공개 Architecture 안에서 다시 읽고 재구성할 수 있도록 한다.",
+  "description_en": "HRTDB Active_Schema is a public structural specification for coordinating independent AI instances under fixed seat roles and preserving their process and outputs as relational memory assets. The architecture treats `for_instance` as the gathering and alignment field, `gpt.xyzt` as the fixed system-control seat, and seven independent instances as the execution set for Data, Function, Result, re-observation, and Result.Data formation. Each cycle is bound to one target and one order and proceeds through `Data → Function.1 → Result → Function.2 → Result.Data` by staged human transport. Function.2 re-observes the externalized Result to detect misreading, omission, boundary errors, and required corrections. A completed Result.Data becomes eligible for Track DB registration only after structural and directional review by `gpt.xyzt`; non-promoted experimental states are preserved as Singularity evidence. Hash DB is defined as a derived search, addressing, and relation-control structure over Track DB, but remains a design candidate rather than a completed implementation in this release. Active_Schema does not merge Track DB, Hash DB, or Singularity. It preserves each object’s identity, source, lineage, and state so that the architecture can be publicly read, reconstructed, and extended.",
+  "keywords": [
+    "HRTDB",
+    "Active_Schema",
+    "distributed AI system",
+    "multi-instance AI",
+    "relational memory",
+    "Track DB",
+    "Hash DB",
+    "Singularity",
+    "provenance",
+    "content addressing",
+    "gpt.xyzt",
+    "for_instance",
+    "Result.Data",
+    "AI coordination architecture"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.21410576",
+      "scheme": "doi",
+      "relation": "isNewVersionOf"
+    }
+  ],
+  "prior_version_package": {
+    "doi": "10.5281/zenodo.21410576",
+    "version": "1.0.0",
+    "zip_sha256": "42bb7089e5cdfb52eb951b3bb53613c7ed75168337c2a76524a0e47b5eefb88c",
+    "verification_state": "EXACT_LOCAL_ARCHIVE_BYTES_VERIFIED"
+  },
+  "current_doi_strategy": {
+    "doi": "ASSIGN_AT_ZENODO_PUBLICATION",
+    "embed_new_doi_inside_frozen_zip": false,
+    "post_publication_binding_phase": "AS_F10"
+  },
+  "publication_authority_event": {
+    "path": "Active_Schema/07_publication/PUBLICATION_AUTHORITY_EVENT.md",
+    "binding": "CORRECTION_AND_REFREEZE_DIRECTLY_AUTHORIZED"
+  },
+  "ai_assistance_note": "AI instance names identify processing, review, and coordination roles in the project lineage; they are not listed as human creators."
+}

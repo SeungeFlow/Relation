@@ -1,0 +1,94 @@
+{
+  "schema_name": "hrt_db_active_schema_release_manifest",
+  "schema_version": "2.0.0",
+  "object_name": "Active_Schema",
+  "object_version": "2.0.0",
+  "release_phase_id": "AS_F8_3",
+  "release_date": "2026-07-20",
+  "package_state": "ZENODO_UPLOAD_READY_BYTE_FROZEN",
+  "creator": {
+    "type": "Person",
+    "name": "Lee, Seung"
+  },
+  "license": "CC-BY-4.0",
+  "title": "HRTDB Active_Schema: 존재의 상태와 기준장을 위한 분산 AI 시스템 및 관계형 기억 구조",
+  "translated_title_en": "HRTDB Active_Schema: A Distributed AI System and Relational Memory Architecture for States of Existence and Reference Fields",
+  "version_relation": {
+    "relation": "isNewVersionOf",
+    "prior_doi": "10.5281/zenodo.21410576",
+    "prior_version": "1.0.0",
+    "prior_zip_sha256": "42bb7089e5cdfb52eb951b3bb53613c7ed75168337c2a76524a0e47b5eefb88c",
+    "as_f9_ui_confirmation_required": true
+  },
+  "predecessor_candidate": {
+    "sha256": "6f95e402c93acc845ca30736b9a9d2919c767db0a6fc12da2aa80451171872e4",
+    "classification": "PREPUBLICATION_EXACT_BYTE_CANDIDATE_R0",
+    "preservation": "KEEP_AS_PREDECESSOR_EVIDENCE"
+  },
+  "publication_surface": {
+    "semantic_display_name": "HRTDB Active_Schema Version 2.0.0 — Corrected Zenodo Publication ZIP",
+    "recommended_display": "<semantic_display_name> · <exact_hash_filename>"
+  },
+  "external_byte_address": {
+    "algorithm": "SHA-256",
+    "filename_rule": "<sha256_of_exact_zip_bytes>.zip",
+    "resolution_state": "RESOLVED_OUTSIDE_PAYLOAD_AFTER_BYTE_FREEZE",
+    "transport_numeric_suffix_part_of_identity": false
+  },
+  "publication_identity": {
+    "new_version_doi": "ASSIGN_AT_ZENODO_PUBLICATION",
+    "uploaded_file_count": 1,
+    "exact_uploaded_filename": "RESOLVED_OUTSIDE_PAYLOAD_FROM_EXACT_ZIP_BYTES"
+  },
+  "metadata_usage": {
+    "path": "Active_Schema/07_publication/ZENODO_METADATA.json",
+    "role": "HUMAN_ENTRY_AND_RELEASE_REFERENCE",
+    "direct_zenodo_api_payload": false
+  },
+  "publication_authority_event": {
+    "path": "Active_Schema/07_publication/PUBLICATION_AUTHORITY_EVENT.md",
+    "state": "BOUND"
+  },
+  "package_identity": {
+    "algorithm": "SHA-256",
+    "filename_rule": "<64-lowercase-sha256>.zip",
+    "self_hash_inside_package": "FORBIDDEN",
+    "sidecar_file": "FORBIDDEN"
+  },
+  "canonical_zip": {
+    "archive_root": "Active_Schema/",
+    "compression_method": "ZIP_STORED",
+    "timestamp": "1980-01-01 00:00:00",
+    "creator_system": "UNIX",
+    "file_mode": "100644",
+    "general_purpose_bit_flags": "0x0800",
+    "explicit_directory_entries": false,
+    "extra_fields": "FORBIDDEN",
+    "file_comments": "FORBIDDEN",
+    "archive_comment": "FORBIDDEN",
+    "ZIP64": "FORBIDDEN"
+  },
+  "canonicalization": {
+    "text_encoding": "UTF-8",
+    "byte_order_mark": "FORBIDDEN",
+    "unicode_normalization": "NFC",
+    "newline": "LF",
+    "final_newline": "REQUIRED",
+    "trailing_whitespace": "REMOVE",
+    "payload_order": "LEXICOGRAPHIC_BY_UTF8_BYTES_OF_FULL_ARCHIVE_PATH"
+  },
+  "inventory": {
+    "path": "Active_Schema/99_manifest/FILE_INVENTORY.json",
+    "checksum_ledger": "Active_Schema/99_manifest/SHA256SUMS.txt",
+    "checksum_ledger_self_excluded": true
+  },
+  "release_verdicts": [
+    "PASS_AS_F8_3_PREPUBLICATION_CORRECTION_COMPLETE",
+    "PASS_ZENODO_UPLOAD_READY_BYTE_REFREEZE"
+  ],
+  "post_publication": {
+    "next_phase": "AS_F9_ZENODO_PUBLICATION",
+    "doi_binding_phase": "AS_F10",
+    "remote_readback_phase": "AS_F11"
+  }
+}
