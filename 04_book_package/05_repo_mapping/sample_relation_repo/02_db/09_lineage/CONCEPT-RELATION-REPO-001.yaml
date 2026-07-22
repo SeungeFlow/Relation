@@ -1,8 +1,0 @@
-concept_lineage:
-  concept_id: CONCEPT-RELATION-REPO-001
-  term: Relation Repo
-  prior_meaning: relation memory repository
-  triggering_conflict: interpretation methods and memory versions must be traceable together
-  meaning_shift: integrated System and Database repository
-  current_role: canonical relation system and memory field
-  next_seed: Q-ACTIVATE-001

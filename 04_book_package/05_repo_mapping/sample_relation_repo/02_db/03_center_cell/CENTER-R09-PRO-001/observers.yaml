@@ -1,8 +1,0 @@
-observers:
-  - actor: 승이
-    position: human_relation_bridge
-    goal: install a usable Relation structure
-    expectation: multi-instance testing after structure creation
-  - actor: AI
-    position: interpreter_and_designer
-    goal: preserve theory, method, and memory in one versioned structure
