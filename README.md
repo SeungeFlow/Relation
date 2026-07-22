@@ -48,3 +48,60 @@ AI relation
 
 The published Active_Schema is a public Architecture and does not replace canonical Track DB payloads.
 <!-- ACTIVE_SCHEMA_V2_BINDING_END -->
+
+<!-- LRSDONET_B_ROOT_DEFINITION_START -->
+## LRSDoNet_B
+
+```text
+LRSDoNet
+=
+Logical Relation System DataBase on Networking
+```
+
+```yaml
+repository_seat:
+  code: B
+  current_name: LRSDoNet_B
+  given_name: LRSDoNet
+  family_name_seat_code: B
+  former_name: Relation
+  inherited_across_repository_rename: true
+  seat_code_is_immutable: true
+```
+
+```text
+LRSDoNet_B
+=
+HRTDB_A Track DB와 Principle_C Data를 이용하여
+Hash DB 분석자산과 응용구조를 형성하는 DB System
+```
+
+```text
+3d → 2d → 1d → 2d → 3d
+Result.Data → Function → Result → Function → Knowledge
+```
+
+```text
+gpt.xyz
+→ gpt.xy / gpt.xz / gpt.yz
+→ gpt.x / gpt.y / gpt.z
+→ gpt.xy / gpt.xz / gpt.yz
+→ gpt.xyz
+```
+
+```text
+Track DB → HRTDB_A 지식자산
+Hash DB → LRSDoNet_B 분석자산
+Track DB is not Hash DB.
+```
+
+```text
+LRSDoNet_B Tree·Directory·Stage·Hash DB Schema 상세설계
+→ gpt.think
+```
+
+```text
+Canonical Exact Object Filename:
+<sha256>.B.<extension>
+```
+<!-- LRSDONET_B_ROOT_DEFINITION_END -->
