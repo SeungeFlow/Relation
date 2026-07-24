@@ -5,6 +5,20 @@ object_class: HASH_DB_ANALYSIS_AND_RELATION_SYSTEM
 generated_by: Active_Schema.gpt.think
 ---
 
+<!-- GPT_XYZT_FIRST_REFERENCE_BEGIN -->
+## First Reference
+
+새로운 인스턴스가 이 Repository의 방법론·Hash DB 형성자리를 점유할 때는 먼저 [`gpt.xyzt.md`](./gpt.xyzt.md)를 읽는다.
+
+```text
+gpt.xyzt.md
+→ Seat / Role / Current Occupant Binding
+→ README.md
+→ Boot Contract
+→ Current Exact Input
+```
+<!-- GPT_XYZT_FIRST_REFERENCE_END -->
+
 # LRSDoNet_B
 
 LRSDoNet_B는 Track DB를 원천 Data로 받아 Candidate Method Field를 통과시키고 단계별 Hash Data와 최종 Hash DB를 형성하는 AI 작동장이다.
