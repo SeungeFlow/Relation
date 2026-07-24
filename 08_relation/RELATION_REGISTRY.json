@@ -1,0 +1,12 @@
+{
+  "schema_name": "lrsdonet_b_relation_registry",
+  "version": "1.0.0",
+  "state": "EMPTY_APPEND_ONLY",
+  "relations": [],
+  "guards": [
+    "relation is not merge",
+    "relation is interconnecting",
+    "structure is not isolate",
+    "structure is relation processing"
+  ]
+}

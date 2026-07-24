@@ -1,0 +1,7 @@
+{
+  "schema_name": "lrsdonet_b_active_method_lineup",
+  "version": "1.0.0",
+  "state": "EMPTY_UNTIL_INPUT_DATA_PROFILE",
+  "active": [],
+  "standby": "See METHOD_RUNTIME_CATALOG.json"
+}

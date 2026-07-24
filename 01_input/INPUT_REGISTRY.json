@@ -1,0 +1,7 @@
+{
+  "schema_name": "lrsdonet_b_track_db_input_registry",
+  "version": "1.0.0",
+  "state": "EMPTY_VALID_INPUT_SPACE",
+  "objects": [],
+  "rule": "Add Track DB objects without rewriting their source identity."
+}
