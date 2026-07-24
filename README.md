@@ -57,3 +57,9 @@ relation is interconnecting.
 structure is not isolate.
 structure is relation processing.
 ```
+
+<!-- SINGULARITY_RECORD_BEGIN -->
+## Singularity Record
+
+[`singularity.md`](./singularity.md)는 작업 중 발생한 구조적 특이점, 원치 않은 결과, 복구과정과 이후 적용할 Guard를 누적 기록하는 운영문서다. 새로운 특이점은 기존 기록을 지우지 않고 문서 끝에 추가한다.
+<!-- SINGULARITY_RECORD_END -->
